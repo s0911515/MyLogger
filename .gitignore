@@ -1,0 +1,13 @@
+# Build outputs
+bin/
+obj/
+publish/
+
+# User-specific files
+*.user
+*.suo
+.vs/
+
+# Logs (アクティビティログは C:\ProgramData\MyLogger\logs だが念のため)
+*.jsonl
+logs/
