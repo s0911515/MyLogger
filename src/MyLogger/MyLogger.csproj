@@ -16,6 +16,13 @@
     <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="8.0.1" />
     <PackageReference Include="Microsoft.Diagnostics.Tracing.TraceEvent" Version="3.1.16" />
     <PackageReference Include="System.Diagnostics.EventLog" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.11" />
+    <!-- Microsoft.Data.Sqlite が既定で引き込む SQLitePCLRaw.bundle_e_sqlite3 (~2.1.x) は
+         CVE-2025-6965 (SQLite 集約関数の列数超過による破損) の影響を受けるため、
+         修正済みバージョン (SQLite 3.50.4 バンドル) へ明示的に上書きする -->
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="3.0.3" />
+    <PackageReference Include="System.Management" Version="8.0.0" />
+    <PackageReference Include="System.DirectoryServices.AccountManagement" Version="8.0.1" />
   </ItemGroup>
 
 </Project>

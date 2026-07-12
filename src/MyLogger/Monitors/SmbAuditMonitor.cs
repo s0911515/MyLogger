@@ -1,9 +1,10 @@
+using System.Collections.Concurrent;
 using System.Diagnostics.Eventing.Reader;
 using System.Text;
-using System.Xml;
 using Microsoft.Extensions.Options;
 using MyLogger.Config;
 using MyLogger.Logging;
+using MyLogger.Util;
 
 namespace MyLogger.Monitors;
 
@@ -21,6 +22,10 @@ public sealed class SmbAuditMonitor : BackgroundService
     private readonly ActivityLogger _activityLogger;
     private readonly ILogger<SmbAuditMonitor> _logger;
     private EventLogWatcher? _watcher;
+
+    // 重複排除: (パス|操作種別) → 最終記録時刻 (FileWatcherMonitor と同じ方式)
+    private readonly ConcurrentDictionary<string, DateTime> _recent = new();
+    private DateTime _lastSweep = DateTime.UtcNow;
 
     public SmbAuditMonitor(
         IOptions<MonitorOptions> options,
@@ -76,7 +81,7 @@ public sealed class SmbAuditMonitor : BackgroundService
         if (e.EventRecord is not { } record) return;
         try
         {
-            var fields = ParseEventData(record.ToXml());
+            var fields = SecurityEventParser.ParseEventData(record.ToXml());
 
             fields.TryGetValue("ShareName", out var shareName);
             if (!_options.IncludeIpcShare && shareName is not null &&
@@ -91,6 +96,15 @@ public sealed class SmbAuditMonitor : BackgroundService
             fields.TryGetValue("ShareLocalPath", out var localPath);
             fields.TryGetValue("RelativeTargetName", out var relativeTarget);
             fields.TryGetValue("AccessMask", out var accessMask);
+
+            // 共有ルート自体へのアクセス (RelativeTargetName が空、または "\" = ファイル個別ではなく
+            // 共有フォルダそのものを指す) は、個々のファイル操作のたびに付随して発生する内部アクセスで
+            // ノイズが多い。共有への接続自体は 5140 (ShareConnected) で別途記録されるため、
+            // 5145 ではファイル個別のアクセスのみを記録する。
+            if (record.Id == 5145 && IsShareRootTarget(relativeTarget))
+            {
+                return;
+            }
 
             // 属性読み取りのみのアクセスを間引く (5145 のみ。データの読み書き・削除は必ず残す)
             if (_options.IgnoreAttributeOnlyAccess && record.Id == 5145 &&
@@ -112,6 +126,15 @@ public sealed class SmbAuditMonitor : BackgroundService
                 _ => $"Event{record.Id}",
             };
 
+            var decodedAccess = DecodeAccessMask(accessMask);
+
+            // SMB は 1 回の実質的な操作に対しハンドルオープン等で複数回の監査イベントを生成するため、
+            // 同一パス・同一種別 (読み取り/書き込み) の連続イベントを間引く (① FileWatcherMonitor と同様)。
+            var dedupeKind = record.Id == 5145
+                ? (SmbAccessClassifier.IsWriteAccess(decodedAccess) ? "W" : "R")
+                : record.Id.ToString();
+            if (!ShouldLog($"{path}|{dedupeKind}")) return;
+
             _activityLogger.Log(new ActivityEvent
             {
                 Timestamp = record.TimeCreated ?? DateTimeOffset.Now.DateTime,
@@ -121,7 +144,7 @@ public sealed class SmbAuditMonitor : BackgroundService
                 ShareName = shareName,
                 User = string.IsNullOrEmpty(domain) ? user : $@"{domain}\{user}",
                 RemoteIp = ip,
-                Access = DecodeAccessMask(accessMask),
+                Access = decodedAccess,
             });
         }
         catch (Exception ex)
@@ -134,34 +157,42 @@ public sealed class SmbAuditMonitor : BackgroundService
         }
     }
 
+    /// <summary>RelativeTargetName が「共有フォルダ自体」を指す値かどうか (空文字、または "\")。</summary>
+    private static bool IsShareRootTarget(string? relativeTarget) =>
+        string.IsNullOrEmpty(relativeTarget) || relativeTarget == @"\";
+
+    /// <summary>同一キーの連続イベントを DedupeSeconds 秒間まとめる。</summary>
+    private bool ShouldLog(string key)
+    {
+        if (_options.DedupeSeconds <= 0) return true;
+
+        var now = DateTime.UtcNow;
+        var window = TimeSpan.FromSeconds(_options.DedupeSeconds);
+
+        // 定期的に古いエントリを掃除してメモリ肥大を防ぐ
+        if (now - _lastSweep > TimeSpan.FromMinutes(5))
+        {
+            _lastSweep = now;
+            foreach (var kv in _recent)
+            {
+                if (now - kv.Value > window) _recent.TryRemove(kv.Key, out _);
+            }
+        }
+
+        if (_recent.TryGetValue(key, out var last) && now - last < window) return false;
+        _recent[key] = now;
+        return true;
+    }
+
     private static string? BuildPath(string? localPath, string? relativeTarget)
     {
         if (string.IsNullOrEmpty(localPath)) return null;
         // ShareLocalPath は "\??\C:\Shared" 形式で来る
         var basePath = localPath.StartsWith(@"\??\", StringComparison.Ordinal) ? localPath[4..] : localPath;
-        if (string.IsNullOrEmpty(relativeTarget)) return basePath;
-        return Path.Combine(basePath, relativeTarget);
-    }
-
-    /// <summary>イベント XML の EventData/Data 要素を名前付きで取り出す。</summary>
-    private static Dictionary<string, string> ParseEventData(string xml)
-    {
-        var result = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-        var doc = new XmlDocument();
-        doc.LoadXml(xml);
-        var ns = new XmlNamespaceManager(doc.NameTable);
-        ns.AddNamespace("e", "http://schemas.microsoft.com/win/2004/08/events/event");
-        var nodes = doc.SelectNodes("//e:EventData/e:Data", ns);
-        if (nodes is null) return result;
-        foreach (XmlNode node in nodes)
-        {
-            var name = node.Attributes?["Name"]?.Value;
-            if (!string.IsNullOrEmpty(name))
-            {
-                result[name] = node.InnerText;
-            }
-        }
-        return result;
+        if (string.IsNullOrEmpty(relativeTarget) || relativeTarget == @"\") return basePath;
+        // RelativeTargetName は "\" 始まりで来ることがあり、Path.Combine に渡すと
+        // 絶対パスと誤認されて basePath が捨てられてしまうため、先頭の "\" を取り除く。
+        return Path.Combine(basePath, relativeTarget.TrimStart('\\'));
     }
 
     /// <summary>データの読み書き・削除・権限変更を表すアクセスビット (属性参照のみは含まない)。</summary>

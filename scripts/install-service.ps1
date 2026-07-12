@@ -42,5 +42,5 @@ Start-Service -Name $serviceName
 Get-Service -Name $serviceName
 
 Write-Host ""
-Write-Host "インストール完了。ログ出力先: C:\ProgramData\MyLogger\logs" -ForegroundColor Green
-Write-Host "ネットワークからのアクセス記録には scripts\enable-audit.ps1 の実行も必要です。" -ForegroundColor Yellow
+Write-Host "インストール完了。DB 出力先: C:\ProgramData\MyLogger\data\activity.db" -ForegroundColor Green
+Write-Host "監査ポリシーの有効化と NTFS 権限保護はサービス起動時にアプリ自身が自動で行います。" -ForegroundColor Yellow

@@ -56,6 +56,12 @@ public static class PathClassifier
         return path;
     }
 
+    // \Device\HarddiskVolumeN\ → ドライブレターの対応表 (QueryDosDevice で構築、TTL 付きキャッシュ)
+    private static readonly object DeviceMapLock = new();
+    private static Dictionary<string, string>? _deviceToDriveMap;
+    private static DateTime _deviceMapCachedAtUtc = DateTime.MinValue;
+    private static readonly TimeSpan DeviceMapTtl = TimeSpan.FromSeconds(30);
+
     /// <summary>正規化済みパスの書き込み先種別を判定する。</summary>
     public static PathTarget Classify(string normalizedPath)
     {
@@ -113,8 +119,58 @@ public static class PathClassifier
         return type;
     }
 
+    /// <summary>
+    /// ETW が返すローカル固定ドライブの生パス (例: "\Device\HarddiskVolume3\tmp\a.txt") を
+    /// ドライブレター形式 (例: "D:\tmp\a.txt") に変換する。FileSystemWatcher 側のパス表記と
+    /// 突き合わせて相関を取るために必要 (解決できない場合は元のパスを返す)。
+    /// </summary>
+    public static string ResolveDevicePathToDriveLetter(string path)
+    {
+        if (!path.StartsWith(@"\Device\", StringComparison.OrdinalIgnoreCase)) return path;
+
+        var map = GetDeviceToDriveMap();
+        foreach (var (devicePrefix, drive) in map)
+        {
+            if (path.StartsWith(devicePrefix, StringComparison.OrdinalIgnoreCase))
+            {
+                return drive + path[devicePrefix.Length..];
+            }
+        }
+        return path;
+    }
+
+    private static Dictionary<string, string> GetDeviceToDriveMap()
+    {
+        lock (DeviceMapLock)
+        {
+            var now = DateTime.UtcNow;
+            if (_deviceToDriveMap is not null && now - _deviceMapCachedAtUtc < DeviceMapTtl)
+            {
+                return _deviceToDriveMap;
+            }
+
+            var map = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+            var sb = new StringBuilder(260);
+            for (var c = 'A'; c <= 'Z'; c++)
+            {
+                var drive = $"{c}:";
+                sb.Clear();
+                if (QueryDosDeviceW(drive, sb, sb.Capacity) > 0)
+                {
+                    map[sb.ToString()] = drive;
+                }
+            }
+            _deviceToDriveMap = map;
+            _deviceMapCachedAtUtc = now;
+            return map;
+        }
+    }
+
     [DllImport("kernel32.dll", CharSet = CharSet.Unicode)]
     private static extern int GetDriveTypeW(string lpRootPathName);
+
+    [DllImport("kernel32.dll", CharSet = CharSet.Unicode, SetLastError = true)]
+    private static extern uint QueryDosDeviceW(string lpDeviceName, StringBuilder lpTargetPath, int ucchMax);
 
     [DllImport("mpr.dll", CharSet = CharSet.Unicode)]
     private static extern int WNetGetConnection(string localName, StringBuilder remoteName, ref int length);
