@@ -33,11 +33,26 @@ dotnet publish probe-tools\ToolB-EtwFileProbe   -c Release -r win-x64 --self-con
 dotnet publish probe-tools\ToolC-ProcessAuditProbe -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o <出力先>
 ```
 
+## テスト用フォルダ・ファイルの準備
+
+`setup-test-env.ps1` を実行すると、新規作成/書き込み(上書き保存)/コピー/ムーブ/リネーム/通常削除/
+完全削除の各操作をひととおり試せる構成のテストフォルダを用意できます(既存があれば削除して作り直す)。
+
+```powershell
+.\probe-tools\setup-test-env.ps1
+# 既定は D:\tmp\ProbeTest。パスを変えたい場合:
+.\probe-tools\setup-test-env.ps1 -TestRoot D:\tmp\MyProbeTest
+```
+
+実行すると `Baseline time` が表示されるので、各ツールを起動したうえで、その時刻以降にエクスプローラ上で
+操作を行い、各ツールのログと突き合わせてください。
+
 ## 使い方の流れ(いずれのツールも共通)
 
-1. 管理者PowerShellでツールを起動する(起動したままにする)
-2. 別のPowerShell/エクスプローラーで、確認したいファイル操作(作成・コピー・移動・リネーム・削除等)を行う
-3. **Ctrl+C** でツールを停止する(ウィンドウを閉じない。正常終了処理でログが確定します)
-4. 出力されたログファイルを確認する
+1. (任意)`setup-test-env.ps1` でテスト用フォルダを準備する
+2. 管理者PowerShellでツールを起動する(起動したままにする)
+3. 別のPowerShell/エクスプローラーで、確認したいファイル操作(作成・コピー・移動・リネーム・削除等)を行う
+4. **Ctrl+C** でツールを停止する(ウィンドウを閉じない。正常終了処理でログが確定します)
+5. 出力されたログファイルを確認する
 
 詳しい使い方・仕組み・ログの読み方は各ツールのREADMEを参照してください。
