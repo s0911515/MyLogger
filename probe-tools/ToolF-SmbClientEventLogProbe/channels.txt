@@ -1,0 +1,6 @@
+# 1行1チャンネル名。# で始まる行はコメント。
+# ここに列挙したイベントチャンネルを購読する(存在しない/無効な場合は起動時にエラー表示して継続する)。
+Microsoft-Windows-SMBClient/Operational
+Microsoft-Windows-SmbClient/Audit
+Microsoft-Windows-SmbClient/Connectivity
+Microsoft-Windows-SmbClient/Security
