@@ -1,0 +1,15 @@
+<Sysmon schemaversion="4.90">
+  <EventFiltering>
+    <RuleGroup name="File Activity Monitor" groupRelation="or">
+      <FileCreate onmatch="include">
+        <TargetFilename condition="begin with">D:\tmp\</TargetFilename>
+      </FileCreate>
+      <FileCreate onmatch="include">
+        <TargetFilename condition="contains">\$Recycle.Bin\</TargetFilename>
+      </FileCreate>
+      <FileDelete onmatch="include">
+        <TargetFilename condition="begin with">D:\tmp\</TargetFilename>
+      </FileDelete>
+    </RuleGroup>
+  </EventFiltering>
+</Sysmon>

@@ -7,7 +7,7 @@ MyLogger の実装ロジック(除外・重複排除・移動統合)を一切介
 ## 調査方法
 
 - 環境: Windows、ローカル NTFS ドライブ(`D:\`)
-- 検証ツール: [`tools/FsWatcherProbe`](../tools/FsWatcherProbe)(この調査のために新規作成)
+- 検証ツール: [`probe-tools/ToolA-FsWatcherProbe`](../probe-tools/ToolA-FsWatcherProbe)(この調査のために新規作成)
   - `FileSystemWatcher` の `Created`/`Changed`/`Deleted`/`Renamed`/`Error` イベントを、
     フィルタ・重複排除・相関処理を一切行わずマイクロ秒精度のタイムスタンプ付きでそのままログ出力するだけの最小ツール。
   - `IncludeSubdirectories = true`、`NotifyFilter` は全フラグ有効、`InternalBufferSize` は既定値(8192)のまま。
@@ -18,7 +18,7 @@ MyLogger の実装ロジック(除外・重複排除・移動統合)を一切介
 再現方法:
 
 ```powershell
-dotnet run --project tools\FsWatcherProbe -- <監視パス> [ログファイル]
+dotnet run --project probe-tools\ToolA-FsWatcherProbe -- <監視パス> [ログファイル]
 ```
 
 ## 判明した事実
@@ -149,6 +149,6 @@ dotnet run --project tools\FsWatcherProbe -- <監視パス> [ログファイル]
 
 ## 検証ツール
 
-[`tools/FsWatcherProbe`](../tools/FsWatcherProbe) — `FileSystemWatcher` の生イベントを
+[`probe-tools/ToolA-FsWatcherProbe`](../probe-tools/ToolA-FsWatcherProbe) — `FileSystemWatcher` の生イベントを
 タイムスタンプ付きでコンソール/ログファイルに出力するだけの最小ツール。MyLogger 本体のロジックを
 一切介さないため、今後も同種の実機調査に使い回せる。

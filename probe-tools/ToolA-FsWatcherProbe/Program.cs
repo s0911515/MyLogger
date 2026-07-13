@@ -2,8 +2,10 @@
 // MyLogger 本体のフィルタ・重複排除・移動統合ロジックは一切介さず、
 // FileSystemWatcher が実際に発火したイベントをそのまま記録する。
 //
-// 使い方: dotnet run --project tools\FsWatcherProbe -- <監視パス> [ログファイル]
+// 使い方: dotnet run --project probe-tools\ToolA-FsWatcherProbe -- <監視パス> [ログファイル]
 //   監視パス省略時は D:\FsWatcherProbe\testarea (無ければ自動作成)。
+
+Console.OutputEncoding = System.Text.Encoding.UTF8; // コンソールの既定コードページによる日本語文字化けを防ぐ
 
 var watchPath = args.Length > 0 ? args[0] : @"D:\FsWatcherProbe\testarea";
 var logPath = args.Length > 1 ? args[1] : Path.Combine(AppContext.BaseDirectory, "fswatcherprobe.log");
