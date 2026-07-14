@@ -93,15 +93,12 @@ FileDelete=`FileKey`のみ、Cleanup/Close=`FileObject`/`FileKey`のみ。
 
 終了時に `EventsLost`(ETWバッファ溢れによる取りこぼし件数)も出力される。
 
-### 既知の制約: `Options`(CreateOptions)フィールドの表示名について
+### 既知の制約(発見・修正済み): `Options`(CreateOptions)フィールドの表示名バグ
 
 TraceEventライブラリの`CreateOptions`列挙型は、表示名に誤って`FILE_ATTRIBUTE_*`(本来はファイル
-**属性**用の名前)を流用している。実際のビット位置は`NtCreateFile`の**CreateOptions**フラグ
-(`FILE_DIRECTORY_FILE=0x1`, `FILE_NON_DIRECTORY_FILE=0x40`, `FILE_DELETE_ON_CLOSE=0x1000` 等)であり、
-たまたま同じビット位置に`FileAttributes`の名前が割り当てられているだけで**意味が異なる**。実機の
-リフレクションで確認済み。このツールは`Options=`の直後に生の16進値も併記する
-(例: `Options=FILE_ATTRIBUTE_OFFLINE(0x1000)`)ので、正しく解釈したい場合はNtCreateFileの
-CreateOptionsフラグ表と照らし合わせること(`0x1000`は実際には`FILE_DELETE_ON_CLOSE`)。
+**属性**用の名前)を流用しており、実際のビット位置とは異なる意味の名前が表示されていた
+(発見時の生ログ例は下記「ログサンプル」参照。当時は`Options=FILE_ATTRIBUTE_OFFLINE(0x1000)`のように
+表示され、これが実際には`FILE_DELETE_ON_CLOSE`だと**ログを見ただけでは分からなかった**)。
 
 **出典(CreateOptionsフラグの正しい定義)**: Microsoft公式ドキュメント
 [NtCreateFile function (ntifs.h) - Windows drivers | Microsoft Learn](https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile)
@@ -111,9 +108,11 @@ CreateOptionsフラグ表と照らし合わせること(`0x1000`は実際には`
 > FILE_DELETE_ON_CLOSE (0x00001000) | The system deletes the file when the last handle to the file is
 > passed to NtClose. If this flag is set, the DELETE flag must be set in the DesiredAccess parameter.
 
-このドキュメントの値と、実機でTraceEventの`CreateOptions`列挙型をリフレクションで洗い出した結果
-(本ツールが表示する`FILE_ATTRIBUTE_DEVICE`=ビット`0x40`、`FILE_ATTRIBUTE_OFFLINE`=ビット`0x1000`)を
-突き合わせることで、表示名の誤りと真の意味を特定した。
+このドキュメントの正しいビット定義に基づき、**ツール側で独自にCreateOptionsをデコードするよう修正した**
+(`DecodeCreateOptions`関数、TraceEventのenumは使わない)。修正後は`Options=FILE_DELETE_ON_CLOSE(0x1000)`
+のように正しいフラグ名がそのままログに出力される(下記「重要な発見」のログサンプルは修正前の生ログの
+ため、修正前の誤った表示名のまま掲載している。修正後の見え方は上記の生の16進値を、この節のフラグ表で
+手動変換したものと一致する)。
 
 ## ログサンプル(実測、2026-07-15)
 
@@ -189,8 +188,16 @@ SetInfo PID=20040 Process=explorer InfoClass=4  ExtraInfo=0  Path=copy_source.tx
   閉じたら自動的に削除する」という指定であり、別途Delete系のIRPが発行されない。**削除の証跡が、削除専用の
   イベントではなく、Create時点のフラグにしか残らないケースがある**、という重要な制約が判明した
 - 上記の調査過程で、TraceEventの`CreateOptions`表示名が`FILE_ATTRIBUTE_*`を誤流用したバグ持ちである
-  ことも判明(詳細は上記「既知の制約」参照)。生の16進値を確認しなければ`FILE_DELETE_ON_CLOSE`の
-  検出は不可能だった
+  ことも判明し、ツール側で正しくデコードするよう修正した(詳細は上記「既知の制約」参照)。修正前は
+  生の16進値を確認しなければ`FILE_DELETE_ON_CLOSE`の検出は不可能だった
+- **`FILE_DELETE_ON_CLOSE`が立っていることを「完全削除が行われた」の判定根拠として使うのは信頼できない。**
+  理由は2つある。(1) 誤検知: このフラグは多くのアプリが一時ファイルの自動クリーンアップに一般的に
+  使う仕組みであり、ユーザーによる意図的な削除操作とは無関係に立つことが多い。(2) 見逃し: 同じ
+  「完全削除」という結果でも、必ずこの経路を通るとは限らない。実際、`rm`(POSIX形式の削除)による
+  削除では、このフラグではなく明示的な`Delete`イベント(`InfoClass=64`、POSIX semantics)として
+  記録された。**同じ「完全削除」でも呼び出し元(Explorer/rm/他アプリ)によって全く異なる痕跡の
+  残り方をするため、ETWレベルで「完全削除」を一意に検出できるシグネチャは存在しない**、というのが
+  この調査の結論
 - **ToolAとETWで「移動」と「リネーム」の区別能力が逆転している。** FileSystemWatcher(ToolA)は
   フォルダ間移動を`Deleted`+`Created`、同一フォルダ内リネームを`Renamed`と明確に区別する。一方ETW
   (本ツール)は両方とも同じ`Rename`イベント(`InfoClass=10`)になり区別できない。**2つを併用すれば、

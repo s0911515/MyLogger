@@ -107,10 +107,10 @@ kernel.FileIOCreate += data =>
     Interlocked.Increment(ref eventCount);
     // 注意: TraceEvent の CreateOptions enum は表示名が FILE_ATTRIBUTE_* を誤流用しており、
     // 実際の NtCreateFile CreateOptions ビット (FILE_DELETE_ON_CLOSE=0x1000 等) とは意味が異なる。
-    // 実機でこの表示名バグが「Shift+Deleteで明示的なDeleteイベントが出ない理由」の解明を妨げたため、
-    // 生の16進値も併記し、呼び出し側で正しいCreateOptionsフラグ表に照らせるようにする。
+    // そのため誤った名前をそのまま出力せず、Microsoft公式ドキュメント (ntifs.h NtCreateFile)
+    // に基づく正しいビット→フラグ名の対応で自前デコードする (DecodeCreateOptions)。
     Log($"Create PID={data.ProcessID} TID={data.ThreadID} Process={data.ProcessName} FileObject={data.FileObject:X} " +
-        $"Disposition={data.CreateDisposition} Options={data.CreateOptions}(0x{(int)data.CreateOptions:X}) Attributes={data.FileAttributes} " +
+        $"Disposition={data.CreateDisposition} Options={DecodeCreateOptions((int)data.CreateOptions)}(0x{(int)data.CreateOptions:X}) Attributes={data.FileAttributes} " +
         $"Share={data.ShareAccess} EtwTime={data.TimeStamp:HH:mm:ss.ffffff} Path={data.FileName}");
 };
 kernel.FileIOWrite += data =>
@@ -205,6 +205,54 @@ session.Stop();
 Log($"=== EtwFileProbe 終了 (出力イベント数={eventCount}, EventsLost={eventsLost}) ===");
 logWriter.Dispose();
 return 0;
+
+/// <summary>
+/// NtCreateFile の CreateOptions ビットを、Microsoft公式ドキュメント (ntifs.h NtCreateFile) の
+/// 正しいフラグ名でデコードする。TraceEvent ライブラリ付属の CreateOptions enum は表示名に
+/// FILE_ATTRIBUTE_* (本来はファイル属性用の名前) を誤流用しており信頼できないため、自前で行う。
+/// 出典: https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile
+/// </summary>
+static string DecodeCreateOptions(int raw)
+{
+    var bits = new (int Bit, string Name)[]
+    {
+        (0x00000001, "FILE_DIRECTORY_FILE"),
+        (0x00000002, "FILE_WRITE_THROUGH"),
+        (0x00000004, "FILE_SEQUENTIAL_ONLY"),
+        (0x00000008, "FILE_NO_INTERMEDIATE_BUFFERING"),
+        (0x00000010, "FILE_SYNCHRONOUS_IO_ALERT"),
+        (0x00000020, "FILE_SYNCHRONOUS_IO_NONALERT"),
+        (0x00000040, "FILE_NON_DIRECTORY_FILE"),
+        (0x00000080, "FILE_CREATE_TREE_CONNECTION"),
+        (0x00000100, "FILE_COMPLETE_IF_OPLOCKED"),
+        (0x00000200, "FILE_NO_EA_KNOWLEDGE"),
+        (0x00000400, "FILE_OPEN_REMOTE_INSTANCE"),
+        (0x00000800, "FILE_RANDOM_ACCESS"),
+        (0x00001000, "FILE_DELETE_ON_CLOSE"),
+        (0x00002000, "FILE_OPEN_BY_FILE_ID"),
+        (0x00004000, "FILE_OPEN_FOR_BACKUP_INTENT"),
+        (0x00008000, "FILE_NO_COMPRESSION"),
+        (0x00010000, "FILE_OPEN_REQUIRING_OPLOCK"),
+        (0x00020000, "FILE_DISALLOW_EXCLUSIVE"),
+        (0x00040000, "FILE_SESSION_AWARE"),
+        (0x00100000, "FILE_RESERVE_OPFILTER"),
+        (0x00200000, "FILE_OPEN_REPARSE_POINT"),
+        (0x00400000, "FILE_OPEN_NO_RECALL"),
+        (0x00800000, "FILE_OPEN_FOR_FREE_SPACE_QUERY"),
+        (0x10000000, "FILE_CONTAINS_EXTENDED_CREATE_INFORMATION"),
+    };
+
+    var names = new List<string>();
+    var remaining = raw;
+    foreach (var (bit, name) in bits)
+    {
+        if ((raw & bit) == 0) continue;
+        names.Add(name);
+        remaining &= ~bit;
+    }
+    if (remaining != 0) names.Add($"UNKNOWN(0x{remaining:X})");
+    return names.Count > 0 ? string.Join("|", names) : "NONE";
+}
 
 /// <summary>"D:" のようなドライブ指定を "\Device\HarddiskVolumeN" 形式の内部パスに解決する。
 /// ETW が返す生パスはこの形式で来ることが多いため、ドライブレター表記のパスと突き合わせるために必要。</summary>
