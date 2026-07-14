@@ -40,20 +40,28 @@ ToolB(ETWファイルイベント、PIDのみ)と ToolC(プロセス生成、PID
 - Windows 10/11 または Windows Server(x64)
 - ToolA を除く各ツールは**管理者権限のPowerShell**で実行してください(ETW/監査ポリシー/セキュリティ
   ログの購読に必要です)
-- ソースから実行する場合は .NET 8 SDK が必要です(`dotnet run --project ...`)
 - ToolF/G(アウトバウンドSMB)の検証には、実際にアクセスできる**別マシンの共有フォルダ**が必要です。
   ToolE(インバウンドSMB)の検証には、このマシン上に共有フォルダを用意し、別マシンからアクセスして
   もらう必要があります(詳細は各READMEの「事前準備」を参照)
-- 配布用に自己完結ビルド(`.exe` 単体で .NET ランタイム不要)にする場合は以下でビルドします:
+
+### 単独実行可能なexe(ビルド済み、.NETランタイム不要)
+
+各ツールフォルダの `dist/` に、自己完結ビルド済みの `.exe` を同梱している。他マシンにこの
+リポジトリを丸ごとコピー(またはclone)すれば、.NETのインストールなしにそのまま実行できる
+(例: `probe-tools\ToolA-FsWatcherProbe\dist\FsWatcherProbe.exe`)。デバッグ用に `.pdb` も同梱。
+
+ソースを変更した場合や、`dist/` を再生成したい場合は以下でビルドし直す:
 
 ```powershell
-dotnet publish probe-tools\ToolA-FsWatcherProbe -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o <出力先>
-dotnet publish probe-tools\ToolB-EtwFileProbe   -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o <出力先>
-dotnet publish probe-tools\ToolC-ProcessAuditProbe -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o <出力先>
-dotnet publish probe-tools\ToolE-SmbServerAuditProbe    -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o <出力先>
-dotnet publish probe-tools\ToolF-SmbClientEventLogProbe -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o <出力先>
-dotnet publish probe-tools\ToolG-SmbClientEtwProbe      -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o <出力先>
+dotnet publish probe-tools\ToolA-FsWatcherProbe -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolA-FsWatcherProbe\dist
+dotnet publish probe-tools\ToolB-EtwFileProbe   -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolB-EtwFileProbe\dist
+dotnet publish probe-tools\ToolC-ProcessAuditProbe -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolC-ProcessAuditProbe\dist
+dotnet publish probe-tools\ToolE-SmbServerAuditProbe    -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolE-SmbServerAuditProbe\dist
+dotnet publish probe-tools\ToolF-SmbClientEventLogProbe -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolF-SmbClientEventLogProbe\dist
+dotnet publish probe-tools\ToolG-SmbClientEtwProbe      -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolG-SmbClientEtwProbe\dist
 ```
+
+ソースから直接実行したい場合は .NET 8 SDK が必要(`dotnet run --project ...`)。
 
 ## テスト用フォルダ・ファイルの準備
 

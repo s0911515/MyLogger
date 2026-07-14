@@ -19,8 +19,8 @@
 # ソースから実行
 dotnet run --project probe-tools\ToolA-FsWatcherProbe -- <監視パス> [ログファイル]
 
-# 自己完結ビルド済みexeの場合
-.\FsWatcherProbe.exe <監視パス> [ログファイル]
+# 同梱のビルド済みexe(.NETランタイム不要)
+.\dist\FsWatcherProbe.exe <監視パス> [ログファイル]
 ```
 
 - `<監視パス>` 省略時は `D:\FsWatcherProbe\testarea`(無ければ自動作成)

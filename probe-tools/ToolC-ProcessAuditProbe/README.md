@@ -60,8 +60,8 @@ auditpol.exe /set /subcategory:"{0CCE922B-69AE-11D9-BED3-505054503030}" /success
 # ソースから実行
 dotnet run --project probe-tools\ToolC-ProcessAuditProbe -- [ログファイル]
 
-# 自己完結ビルド済みexeの場合
-.\ProcessAuditProbe.exe [ログファイル]
+# 同梱のビルド済みexe(.NETランタイム不要)
+.\dist\ProcessAuditProbe.exe [ログファイル]
 ```
 
 - `[ログファイル]` 省略時は実行ファイルと同じフォルダの `processauditprobe.log`

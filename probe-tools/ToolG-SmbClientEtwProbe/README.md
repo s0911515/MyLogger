@@ -42,8 +42,8 @@ Event=SmbRegistryKey ID=30410 PID=60172 TID=86264 Opcode=情報 RegName=EnableSM
 # ソースから実行
 dotnet run --project probe-tools\ToolG-SmbClientEtwProbe -- [ログファイル]
 
-# 自己完結ビルド済みexeの場合
-.\SmbClientEtwProbe.exe [ログファイル]
+# 同梱のビルド済みexe(.NETランタイム不要)
+.\dist\SmbClientEtwProbe.exe [ログファイル]
 ```
 
 - `[ログファイル]` 省略時は実行ファイルと同じフォルダの `smbclientetwprobe.log`

@@ -56,8 +56,8 @@ New-SmbShare -Name TestShare -Path D:\tmp\SmbTestShare -FullAccess Everyone
 # ソースから実行
 dotnet run --project probe-tools\ToolE-SmbServerAuditProbe -- [ログファイル]
 
-# 自己完結ビルド済みexeの場合
-.\SmbServerAuditProbe.exe [ログファイル]
+# 同梱のビルド済みexe(.NETランタイム不要)
+.\dist\SmbServerAuditProbe.exe [ログファイル]
 ```
 
 - `[ログファイル]` 省略時は実行ファイルと同じフォルダの `smbserverauditprobe.log`

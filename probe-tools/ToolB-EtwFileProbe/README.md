@@ -33,8 +33,8 @@ ETW(Event Tracing for Windows)のカーネル FileIO イベントで実際に取
 # ソースから実行
 dotnet run --project probe-tools\ToolB-EtwFileProbe -- [ログファイル]
 
-# 自己完結ビルド済みexeの場合
-.\EtwFileProbe.exe [ログファイル]
+# 同梱のビルド済みexe(.NETランタイム不要)
+.\dist\EtwFileProbe.exe [ログファイル]
 ```
 
 - `[ログファイル]` 省略時は実行ファイルと同じフォルダの `etwfileprobe.log`

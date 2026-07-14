@@ -42,8 +42,8 @@
 # ソースから実行
 dotnet run --project probe-tools\ToolF-SmbClientEventLogProbe -- [ログファイル]
 
-# 自己完結ビルド済みexeの場合
-.\SmbClientEventLogProbe.exe [ログファイル]
+# 同梱のビルド済みexe(.NETランタイム不要)
+.\dist\SmbClientEventLogProbe.exe [ログファイル]
 ```
 
 - `[ログファイル]` 省略時は実行ファイルと同じフォルダの `smbclienteventlogprobe.log`
