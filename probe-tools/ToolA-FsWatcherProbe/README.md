@@ -65,13 +65,60 @@ dotnet run --project probe-tools\ToolA-FsWatcherProbe -- <監視パス> [ログ�
 | 4 | 移動(切り取り&貼り付け、フォルダ間) | `Source\move_source.txt` を切り取り `ProbeTest` に貼り付け | `Deleted`(移動元)→`Created`(移動先)→`Changed`(`Source` フォルダ) | **`Renamed` イベントにはならない。** 同一ボリューム内でもフォルダをまたぐ移動は Delete+Create で表現される |
 | 5 | リネーム(同一フォルダ内) | `Source\rename_source.txt` をF2でリネーム | `Renamed`(Old/NewFullPath付き)→`Changed`(`Source` フォルダ) | 同一フォルダ内の名前変更は素直に `Renamed` になる(#4のフォルダ間移動と対照的) |
 | 6 | 通常削除(ゴミ箱移動) | `delete_normal.txt` をDeleteキー | `Deleted` 1件 | |
-| 7 | 完全削除(Shift+Delete) | `delete_complete.txt` をShift+Delete | `Deleted` 1件 | **#6と全く同じ形式。ゴミ箱移動か完全削除かは `FileSystemWatcher` だけでは判別不可能**(Sysmon=ToolDなら判別できる。[ToolD README](../ToolD-Sysmon/README.md)参照) |
+| 7 | 完全削除(Shift+Delete) | `delete_complete.txt` をShift+Delete | `Deleted` 1件 | **このセッション(監視パスを`D:\tmp\ProbeTest`に限定)では#6と全く同じ形式で判別不可能だったが、これは監視範囲が原因だった。ドライブ全体を監視した場合は判別可能。詳細は下記「追加検証」参照** |
 
 このセッションから確認できた重要な事実:
 
 - **フォルダをまたぐ移動(切り取り&貼り付け)は `Renamed` にならず `Deleted`+`Created` の2件になる。** 同一フォルダ内の名前変更(#5)だけが `Renamed` になる。移動と改名を区別するにはパス比較(ファイル名部分が同じか)だけでは不十分で、タイムスタンプの近さと組み合わせた推定が必要になる
 - ファイル操作のためにエクスプローラーで親フォルダを開閉すると、対象ファイルとは無関係に親フォルダ自体の `Changed`(`IsDir=true`)が付随して発生する(#3, #4, #5)。ノイズとして扱うか、移動/リネームの裏付けとして使うかは評価次第
-- 通常削除と完全削除は `FileSystemWatcher` レベルでは区別できない(#6, #7)
+- 通常削除と完全削除は、**監視パスに`$RECYCLE.BIN`が含まれない場合は** `FileSystemWatcher` レベルで区別できない(#6, #7)。含まれる場合は区別できる(下記「追加検証」参照)
+
+## 追加検証: 監視パスをドライブ全体(`D:\`)にした場合(実測、2026-07-15)
+
+上記の検証は監視パスを`D:\tmp\ProbeTest`に限定していたため、`$RECYCLE.BIN`(`D:\$RECYCLE.BIN`、
+ドライブ直下)は監視範囲外だった。監視パスを`D:\`に変えて#6・#7を再検証したところ、**通常削除と
+完全削除は判別可能**という訂正結果が得られた。
+
+```
+[06:11:14.811038] === FsWatcherProbe 開始 監視パス=D:\ ログ=D:\tmp\toolA-sample.log ===
+[06:11:14.839822] 監視開始。プロセス終了(Ctrl+C / kill)まで待機します。
+[06:11:46.973335] Created   ChangeType=Created FullPath=D:\$RECYCLE.BIN\S-1-5-21-...\$IMCC2VH.txt IsDir=false
+[06:11:46.973674] Changed   ChangeType=Changed FullPath=D:\$RECYCLE.BIN\S-1-5-21-...\$IMCC2VH.txt IsDir=false
+[06:11:46.973817] Changed   ChangeType=Changed FullPath=D:\$RECYCLE.BIN\S-1-5-21-...                IsDir=true
+[06:11:46.974091] Deleted   ChangeType=Deleted FullPath=D:\tmp\ProbeTest\delete_normal.txt
+[06:11:46.974272] Created   ChangeType=Created FullPath=D:\$RECYCLE.BIN\S-1-5-21-...\$RMCC2VH.txt IsDir=false
+[06:11:46.974433] Changed   ChangeType=Changed FullPath=D:\$RECYCLE.BIN\S-1-5-21-...                IsDir=true
+[06:11:46.992059] Changed   ChangeType=Changed FullPath=D:\tmp\ProbeTest                            IsDir=true
+[06:11:48.845865] Deleted   ChangeType=Deleted FullPath=D:\tmp\ProbeTest\delete_complete.txt
+[06:11:48.872827] Changed   ChangeType=Changed FullPath=D:\tmp\ProbeTest                            IsDir=true
+```
+
+**通常削除(`delete_normal.txt`)**: `Deleted`(元パス)の前後に、`$RECYCLE.BIN`配下への`Created`が
+**2件**伴う。
+
+- `$IMCC2VH.txt`(`$I`=Index、メタデータファイル。元のパス・削除日時等の復元用情報を保持)
+- `$RMCC2VH.txt`(`$R`=Renamed、実体ファイル。**削除されたファイルの中身そのものが、この新しいパスに
+  リネームされている**)
+
+**完全削除(`delete_complete.txt`)**: `Deleted`(元パス)のみで、`$RECYCLE.BIN`への`Created`は
+一切伴わない。
+
+### 訂正: 通常削除と完全削除は判別可能(監視範囲がドライブ全体の場合)
+
+上記の通り、**`Deleted`イベントの直後に、同じ拡張子・近い8文字のランダム名を持つ`$RECYCLE.BIN\...\$R*`
+への`Created`が伴うかどうか**で、通常削除(ゴミ箱経由)と完全削除(ゴミ箱を経由しない)を判別できる。
+`$RECYCLE.BIN`を監視範囲に含めない場合(前述の`D:\tmp\ProbeTest`限定のテスト)は、この判別材料自体が
+観測できないため「判別不可能」という結論になっていたが、これは`FileSystemWatcher`自体の限界ではなく
+**監視範囲の設定次第**だったことになる。
+
+さらに、**ETW(ToolB)の`Rename`イベントでは移動先の新パスが一切分からなかった**のに対し、
+**FileSystemWatcher(本ツール)は移動先の実パス(`$R...`)をそのまま`Created`イベントで教えてくれる**。
+ETWでは取れない情報がFileSystemWatcher側で取れる好例であり、2つのツールの相補性を示す発見と言える
+([ToolB-EtwFileProbe/README.md](../ToolB-EtwFileProbe/README.md) 参照)。
+
+なお、ToolB(ETW)は`$RECYCLE.BIN`配下を大量ノイズ(既存アイテム全件のメタデータ再走査)のため既定で
+除外しており、この情報は取得できない。$RECYCLE.BINの実パスを知りたい場合は本ツール(ToolA)を
+ドライブ全体で使う必要がある。
 
 既知の事実(詳細は [doc/FileSystemWatcher調査.md](../../doc/FileSystemWatcher調査.md) 参照):
 

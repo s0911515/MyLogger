@@ -28,6 +28,20 @@ Create/Write/Read/Flush/Rename/Delete/FileDelete/SetInfo/Cleanup/Close の10種�
    (フォルダ自体のオープン・`desktop.ini`・`Thumbs.db`・`$RECYCLE.BIN`・`System Volume Information`)
    は出力しない
 
+### `$RECYCLE.BIN` を既定で除外している理由(実機で検証済み)
+
+`$RECYCLE.BIN`配下は、そのボリュームへの削除操作のたびに**ごみ箱内の既存アイテム全件のメタデータが
+再走査され、大量のノイズが出る**ため既定で除外している(MyLogger本体の`FileWatcherMonitor`も同じ理由で
+既定除外している)。実際にこのフィルタを一時的に無効化して検証したところ、1回のゴミ箱移動で
+`D:\$RECYCLE.BIN\<SID>\$Ixxxxxxx`(既存アイテムのインデックスファイル)や`desktop.ini`への
+`Create`/`Read`イベントが多数記録され、ノイズとしての実害を確認した。
+
+一方で、この除外により**削除されたファイルの移動先($RECYCLE.BIN内の実パス)は本ツールでは一切見えない**
+というトレードオフがある。この情報が必要な場合は [ToolA-FsWatcherProbe](../ToolA-FsWatcherProbe) を
+ドライブ全体($RECYCLE.BINを含むパス)で使うとよい。ToolAは同種のノイズを除外していないため、
+`$RECYCLE.BIN`への移動先パス(`$R`から始まる実体ファイル)がそのまま`Created`イベントとして記録される
+(詳細は [ToolA-FsWatcherProbe/README.md](../ToolA-FsWatcherProbe/README.md) の「ログサンプル」参照)。
+
 ## 使い方
 
 ```powershell
@@ -233,7 +247,10 @@ ToolA と同じ `D:\tmp\ProbeTest` に対して同じ7操作を行い記録し�
   ETWのPID/プロセス名付与とFileSystemWatcherの移動/リネーム区別を組み合わせられる**、という設計上の
   示唆が得られた
 - **ETWの`Rename`イベントには移動・変更後の新パスが含まれない**(このツールが記録しているフィールド
-  セットでは、旧パスのみが`Path`に出る)
+  セットでは、旧パスのみが`Path`に出る)。ゴミ箱移動の新パス(`$RECYCLE.BIN`内の実パス)も同様に
+  本ツールでは分からないが、**ToolA(FileSystemWatcher)をドライブ全体で使うと、ゴミ箱内の移動先が
+  そのまま`Created`イベントのパスとして見える**(ToolAのREADME参照)。ETWで取れない情報がFSW側で
+  取れる好例
 - 小サイズファイルのコピー先には`Write`イベントが記録されないことがある(Fast I/O経路のため)
 - ゴミ箱への通常削除(`InfoClass=13`)は「削除」ではなく内部的に「リネーム(ごみ箱内への移動)」を伴う
 
