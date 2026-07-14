@@ -103,6 +103,18 @@ TraceEventライブラリの`CreateOptions`列挙型は、表示名に誤って`
 (例: `Options=FILE_ATTRIBUTE_OFFLINE(0x1000)`)ので、正しく解釈したい場合はNtCreateFileの
 CreateOptionsフラグ表と照らし合わせること(`0x1000`は実際には`FILE_DELETE_ON_CLOSE`)。
 
+**出典(CreateOptionsフラグの正しい定義)**: Microsoft公式ドキュメント
+[NtCreateFile function (ntifs.h) - Windows drivers | Microsoft Learn](https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile)
+の`CreateOptions`パラメータ表。該当箇所を引用:
+
+> FILE_NON_DIRECTORY_FILE (0x00000040) | The file is *not* a directory. ...
+> FILE_DELETE_ON_CLOSE (0x00001000) | The system deletes the file when the last handle to the file is
+> passed to NtClose. If this flag is set, the DELETE flag must be set in the DesiredAccess parameter.
+
+このドキュメントの値と、実機でTraceEventの`CreateOptions`列挙型をリフレクションで洗い出した結果
+(本ツールが表示する`FILE_ATTRIBUTE_DEVICE`=ビット`0x40`、`FILE_ATTRIBUTE_OFFLINE`=ビット`0x1000`)を
+突き合わせることで、表示名の誤りと真の意味を特定した。
+
 ## ログサンプル(実測、2026-07-15)
 
 ToolA と同じ `D:\tmp\ProbeTest` に対して同じ7操作を行い記録した実際のログ(抜粋・一部整形)。
