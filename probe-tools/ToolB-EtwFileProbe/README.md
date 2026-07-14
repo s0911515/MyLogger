@@ -88,3 +88,65 @@ System
 Write/Read=`FileKey`/`Offset`/`IoSize`/`IoFlags`、Rename/Delete=`FileKey`/`InfoClass`/`ExtraInfo`。
 
 終了時に `EventsLost`(ETWバッファ溢れによる取りこぼし件数)も出力される。
+
+## ログサンプル(実測、2026-07-15)
+
+ToolA と同じ `D:\tmp\ProbeTest` に対して同じ7操作を行い記録した実際のログ(抜粋・一部整形)。
+このセッションでは `watch-paths.txt` の編集が反映されておらず `D:\` 全体を監視していたため、
+`Hidemaru`(テキストエディタ)が上位フォルダの `.editorconfig` を探索するイベント等、対象操作とは
+無関係なイベントも混ざっている(絞り込みの効果を示す実例として、あえてそのまま残す)。
+
+```
+[00:00:49.910920] === EtwFileProbe 開始 監視対象パス=[D:\] 自PID=119872 除外プロセス=[claude, Code, System] ===
+[00:01:16.297095] Create PID=20040 Process=explorer Disposition=CREATE_NEW Path=...\新規 テキスト ドキュメント.txt
+[00:01:17.679806] Create PID=20040 Process=explorer Disposition=OPEN_EXISTING Path=...\新規 テキスト ドキュメント.txt (×3、Explorerの再オープン)
+[00:01:17.891122] Create PID=20040 Process=explorer Disposition=OPEN_EXISTING Path=write_target.txt (複数)
+[00:01:18.455225] Create PID=105284 Process=Hidemaru Path=D:\tmp\ProbeTest\.editorconfig
+[00:01:18.455470] Create PID=105284 Process=Hidemaru Path=D:\tmp\.editorconfig
+[00:01:18.455581] Create PID=105284 Process=Hidemaru Path=D:\.editorconfig
+[00:01:18.456386] Read   PID=105284 Process=Hidemaru Offset=0  IoSize=4     Path=write_target.txt
+[00:01:18.456483] Read   PID=105284 Process=Hidemaru Offset=0  IoSize=16352 Path=write_target.txt
+[00:01:18.456565] Read   PID=105284 Process=Hidemaru Offset=30 IoSize=16352 Path=write_target.txt
+[00:01:21.961084] Write  PID=105284 Process=Hidemaru Offset=0  IoSize=34    Path=write_target.txt
+[00:01:30.239137] Read   PID=20040 Process=explorer  Offset=0  IoSize=18    Path=Source\copy_source.txt
+[00:01:30.303651] Create PID=20040 Process=explorer  Disposition=CREATE_NEW Path=copy_source.txt (コピー先。対応するWriteイベントは記録されなかった)
+[00:01:35.388955] Rename PID=20040 Process=explorer  InfoClass=10 ExtraInfo=0 Path=Source\move_source.txt (移動先のパスはこのイベントに含まれない)
+[00:01:43.115167] Rename PID=20040 Process=explorer  InfoClass=10 ExtraInfo=0 Path=Source\rename_source.txt (#移動と全く同じ形式)
+[00:01:46.462605] Delete PID=20040 Process=explorer  InfoClass=13 ExtraInfo=1 Path=delete_normal.txt
+[00:01:46.462691] Delete PID=20040 Process=explorer  InfoClass=13 ExtraInfo=0 Path=delete_normal.txt
+[00:01:46.463035] Rename PID=20040 Process=explorer  InfoClass=10 ExtraInfo=0 Path=delete_normal.txt (ごみ箱への移動もRenameとして記録される)
+[00:01:48.675037] Create PID=20040 Process=explorer  Disposition=OPEN_EXISTING Share=Delete Path=delete_complete.txt
+(この直後、ツール終了時のバグにより Delete イベントの記録前にクラッシュ。下記「既知の不具合」参照)
+```
+
+### 操作と記録されたイベントの対応
+
+| # | 操作 | 主な記録イベント | 所見 |
+|---|---|---|---|
+| 1 | 新規作成 | `Create`(`Disposition=CREATE_NEW`)1件 + `Create`(`OPEN_EXISTING`、Explorerの再オープン)複数 | `Disposition`で「真の新規作成」と「既存を開いただけ」を区別できる |
+| 2 | 上書き保存(Hidemaruで編集) | `Create`(Explorer/Hidemaru双方から複数)+ `Read`×3(Offset 0, 0, 30)+ `Write`(Offset=0, IoSize=34) | **実際の書き込みオフセット・バイト数まで取得できる**(ToolAには無い情報)。副次的にHidemaruが`ProbeTest`→`D:\tmp`→`D:\`と上位フォルダの`.editorconfig`を探索する様子まで見えた |
+| 3 | コピー | コピー元への`Create`+`Read`(IoSize=18)、コピー先への`Create`(`CREATE_NEW`) | **コピー先への`Write`イベントが記録されなかった。** 小サイズファイルはキャッシュマネージャーのFast I/O経路で処理されIRPが発生しないためと考えられる(過去のLOCAL_COPY検知試作時の知見と一致) |
+| 4 | 移動(フォルダ間、切り取り&貼り付け) | `Create`複数 + `Rename`(`InfoClass=10`, `ExtraInfo=0`、パスは**移動元のまま**) | ToolAでは`Deleted`+`Created`だったが、ETWでは`Rename`1件になる。**移動先の新パスはこのイベントに含まれない** |
+| 5 | リネーム(同一フォルダ内) | `Create`複数 + `Rename`(`InfoClass=10`, `ExtraInfo=0`) | **#4(移動)と全く同じ形式。** ETW単体では「フォルダ間移動」と「同一フォルダ内リネーム」を区別できない(ToolAとは逆に、こちらはToolAの方が区別できる) |
+| 6 | 通常削除(ゴミ箱移動) | `Create`複数 + `Delete`(`InfoClass=13`)×2 + `Rename`(`InfoClass=10`) | ゴミ箱への移動は内部的に「削除」と「リネーム(ごみ箱内への移動)」の組み合わせで記録される。[doc/Sysmon/Sysmon.md](../../doc/Sysmon/Sysmon.md)の「通常削除はゴミ箱へのRename」という知見と一致 |
+| 7 | 完全削除(Shift+Delete) | `Create`複数(最後は`Share=Delete`のみのopen)まで確認 | **このセッションでは`Delete`イベント自体を確認する前にツールがクラッシュしたため未確認。** 下記のバグ修正後、再検証が望ましい |
+
+### 重要な発見
+
+- **ToolAとETWで「移動」と「リネーム」の区別能力が逆転している。** FileSystemWatcher(ToolA)は
+  フォルダ間移動を`Deleted`+`Created`、同一フォルダ内リネームを`Renamed`と明確に区別する。一方ETW
+  (本ツール)は両方とも同じ`Rename`イベント(`InfoClass=10`)になり区別できない。**2つを併用すれば、
+  ETWのPID/プロセス名付与とFileSystemWatcherの移動/リネーム区別を組み合わせられる**、という設計上の
+  示唆が得られた
+- **ETWの`Rename`イベントには移動・変更後の新パスが含まれない**(このツールが記録しているフィールド
+  セットでは、旧パスのみが`Path`に出る)
+- 小サイズファイルのコピー先には`Write`イベントが記録されないことがある(Fast I/O経路のため)
+- ゴミ箱への通常削除は「削除」ではなく内部的に「リネーム(ごみ箱内への移動)」を伴う
+
+### 既知の不具合(発見・修正済み)
+
+このセッション実行時点のビルドには、終了処理で `session.Stop()` の**後**に `session.EventsLost` を
+読もうとして `COMException`(WMIプロバイダーがインスタンス名を認識できない)で異常終了するバグが
+あった。`EventsLost` は停止前に読む必要があると判明したため、`Stop()` 呼び出し前に読むよう修正済み
+(`dist/` のexeも再ビルド済み)。このバグにより#7の`Delete`イベントが記録される前にプロセスが
+異常終了した可能性がある。

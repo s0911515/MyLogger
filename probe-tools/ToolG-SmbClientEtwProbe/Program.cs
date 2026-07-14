@@ -67,8 +67,11 @@ AppDomain.CurrentDomain.ProcessExit += (_, _) => exitSignal.Set();
 Log("監視開始。プロセス終了(Ctrl+C / kill)まで待機します。");
 exitSignal.Wait();
 
+// EventsLost は session.Stop() 後に読むと COMException になることを ToolB での実機検証で確認したため、
+// 停止前に読んでおく。
+var eventsLost = session.EventsLost;
 session.Stop();
-Log($"=== SmbClientEtwProbe 終了 (出力イベント数={eventCount}, EventsLost={session.EventsLost}) ===");
+Log($"=== SmbClientEtwProbe 終了 (出力イベント数={eventCount}, EventsLost={eventsLost}) ===");
 logWriter.Dispose();
 return 0;
 
