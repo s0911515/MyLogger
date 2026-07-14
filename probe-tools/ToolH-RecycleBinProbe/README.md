@@ -115,6 +115,61 @@ $Iファイルが規定時間内(最大1秒、100ms×10回リトライ)に読め
 44 00 3A 00 5C 00 ...     "D:\..." (UTF-16LE)
 ```
 
+## 追加検証: フォルダ+複数ファイルの一括削除(実測、2026-07-15)
+
+`D:\tmp\ProbeTest` 配下のフォルダ・ファイルをエクスプローラーで全選択し、Deleteキーで一括削除した
+実際のログ(無加工・全件)。
+
+```
+[08:13:07.676723] === RecycleBinProbe(ツールH: ゴミ箱監視・元パス解決) 開始 ログ=...\recyclebinprobe.log 監視ドライブ=[D:] (...\watch-drives.txt) ===
+[08:13:07.701879] 監視開始: D:\$RECYCLE.BIN
+[08:13:07.703697] 監視開始。プロセス終了(Ctrl+C / kill)まで待機します。
+[08:13:16.971240] Created   ChangeType=Created FullPath=D:\$RECYCLE.BIN\<SID>\$IDLH4PL IsDir=false
+[08:13:16.971909] Changed   ChangeType=Changed FullPath=D:\$RECYCLE.BIN\<SID>\$IDLH4PL IsDir=false
+[08:13:16.972088] Changed   ChangeType=Changed FullPath=D:\$RECYCLE.BIN\<SID> IsDir=true
+[08:13:16.972864] Created   ChangeType=Created FullPath=D:\$RECYCLE.BIN\<SID>\$RDLH4PL IsDir=true
+[08:13:16.973935] Changed   ChangeType=Changed FullPath=D:\$RECYCLE.BIN\<SID> IsDir=true
+[08:13:16.974055] Created   ChangeType=Created FullPath=D:\$RECYCLE.BIN\<SID>\$IVKCJNB.txt IsDir=false
+[08:13:16.974160] Changed   ChangeType=Changed FullPath=D:\$RECYCLE.BIN\<SID>\$IVKCJNB.txt IsDir=false
+[08:13:16.974240] Changed   ChangeType=Changed FullPath=D:\$RECYCLE.BIN\<SID> IsDir=true
+[08:13:16.974353] Created   ChangeType=Created FullPath=D:\$RECYCLE.BIN\<SID>\$RVKCJNB.txt IsDir=false
+[08:13:16.974525] Changed   ChangeType=Changed FullPath=D:\$RECYCLE.BIN\<SID> IsDir=true
+[08:13:16.974694] Created   ChangeType=Created FullPath=D:\$RECYCLE.BIN\<SID>\$IT229HT.txt IsDir=false
+[08:13:16.974799] Changed   ChangeType=Changed FullPath=D:\$RECYCLE.BIN\<SID>\$IT229HT.txt IsDir=false
+[08:13:16.974885] Changed   ChangeType=Changed FullPath=D:\$RECYCLE.BIN\<SID> IsDir=true
+[08:13:16.975040] Created   ChangeType=Created FullPath=D:\$RECYCLE.BIN\<SID>\$RT229HT.txt IsDir=false
+[08:13:16.975118] Changed   ChangeType=Changed FullPath=D:\$RECYCLE.BIN\<SID> IsDir=true
+[08:13:16.975326] Created   ChangeType=Created FullPath=D:\$RECYCLE.BIN\<SID>\$ID8KSPG.txt IsDir=false
+[08:13:16.975447] Changed   ChangeType=Changed FullPath=D:\$RECYCLE.BIN\<SID>\$ID8KSPG.txt IsDir=false
+[08:13:16.975598] Changed   ChangeType=Changed FullPath=D:\$RECYCLE.BIN\<SID> IsDir=true
+[08:13:16.975815] Created   ChangeType=Created FullPath=D:\$RECYCLE.BIN\<SID>\$RD8KSPG.txt IsDir=false
+[08:13:16.976023] Changed   ChangeType=Changed FullPath=D:\$RECYCLE.BIN\<SID> IsDir=true
+[08:13:16.988001] Resolved  RPath=...\$RDLH4PL   IPath=...\$IDLH4PL   DetectedAt=08:13:16.972945 Version=2 OriginalSize=56 DeletionTime=2026-07-15 08:13:16.964 OriginalPath=D:\tmp\ProbeTest\Source
+[08:13:16.988477] Resolved  RPath=...\$RVKCJNB.txt IPath=...\$IVKCJNB.txt DetectedAt=08:13:16.974436 Version=2 OriginalSize=22 DeletionTime=2026-07-15 08:13:16.967 OriginalPath=D:\tmp\ProbeTest\delete_complete.txt
+[08:13:16.988898] Resolved  RPath=...\$RT229HT.txt IPath=...\$IT229HT.txt DetectedAt=08:13:16.975096 Version=2 OriginalSize=20 DeletionTime=2026-07-15 08:13:16.969 OriginalPath=D:\tmp\ProbeTest\delete_normal.txt
+[08:13:16.989149] Resolved  RPath=...\$RD8KSPG.txt IPath=...\$ID8KSPG.txt DetectedAt=08:13:16.975928 Version=2 OriginalSize=30 DeletionTime=2026-07-15 08:13:16.972 OriginalPath=D:\tmp\ProbeTest\write_target.txt
+[08:13:23.158511] === RecycleBinProbe 終了 (出力イベント数=20) ===
+```
+
+(`<SID>`は`S-1-5-21-...-1001`を短縮、`RPath`/`IPath`の`...`は`D:\$RECYCLE.BIN\<SID>\`を省略。
+`IFileHex`は紙面の都合上省略、生ログには全件含まれる)
+
+### 分かったこと
+
+- **フォルダ自体もゴミ箱に送られ、`$I`ファイルから正しく元パスを解決できる。** `Source`フォルダの
+  削除は`$RDLH4PL`(拡張子なし、`IsDir=true`)というエントリになり、`OriginalPath=D:\tmp\ProbeTest\Source`
+  まで正しく復元できた。**ファイルは`$R<ランダム>.拡張子`という命名だが、フォルダは拡張子が付かない**
+  という違いがある(ファイル名だけで両者を区別できる)。なお`OriginalSize=56`が何を表すか
+  (NTFSのディレクトリエントリ自体のサイズと思われるが未確認)は不明瞭で、フォルダの場合の
+  `OriginalSize`フィールドの意味は要検証
+- **一括削除(4件同時)でも取りこぼしなく全件解決できた。** キューベースの設計(検知はキューに積むだけ、
+  解決は別スレッド)が、複数ファイルがほぼ同時に飛んでくるケースでも機能することを確認
+- 4件とも独立した`$I`/`$R`ペアになり、削除日時(`DeletionTime`)もミリ秒単位でわずかにズレている
+  (08:13:16.964〜.972)ため、削除された順序も分かる
+- 4件とも通常削除(ゴミ箱経由)のパターンだったこと自体が、Shift+Deleteではなく通常のDeleteキーで
+  削除されたことの間接的な証拠になる(ToolBの調査で「Shift+Deleteは`$RECYCLE.BIN`に一切痕跡を
+  残さない」ことが分かっているため。[ToolB-EtwFileProbe/README.md](../ToolB-EtwFileProbe/README.md)参照)
+
 ## 既知の不具合(発見・修正済み)
 
 バージョン2のパスデコードで、`pathLengthChars`がnull終端文字を含む文字数であることを見落とし、
