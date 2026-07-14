@@ -7,6 +7,12 @@
 // (突合はテーブルA・Bを見比べて後日別途行う)。
 // FileSystemWatcher 側の同種のプローブは ToolA-FsWatcherProbe を参照。
 //
+// 購読しているイベント種別は Create/Write/Read/Flush/Rename/Delete/FileDelete/SetInfo/Cleanup/Close
+// の10種。うち後半4種(FileDelete/SetInfo/Cleanup/Close)は、完全削除(Shift+Delete)が
+// FileIODelete(FileDispositionInformationのSetInfo, InfoClass=13)に現れないケースを実機で確認した
+// ことを受けて追加した(リフレクションで KernelTraceEventParser の全イベント一覧を洗い出し、
+// 実際に何が取れるか確認するため追加購読している)。
+//
 // 使い方 (管理者権限の PowerShell で):
 //   dotnet run --project probe-tools\ToolB-EtwFileProbe -- [ログファイル]
 //
@@ -99,8 +105,12 @@ kernel.FileIOCreate += data =>
 {
     if (ShouldSkip(data.ProcessID, data.ProcessName, data.FileName)) return;
     Interlocked.Increment(ref eventCount);
+    // 注意: TraceEvent の CreateOptions enum は表示名が FILE_ATTRIBUTE_* を誤流用しており、
+    // 実際の NtCreateFile CreateOptions ビット (FILE_DELETE_ON_CLOSE=0x1000 等) とは意味が異なる。
+    // 実機でこの表示名バグが「Shift+Deleteで明示的なDeleteイベントが出ない理由」の解明を妨げたため、
+    // 生の16進値も併記し、呼び出し側で正しいCreateOptionsフラグ表に照らせるようにする。
     Log($"Create PID={data.ProcessID} TID={data.ThreadID} Process={data.ProcessName} FileObject={data.FileObject:X} " +
-        $"Disposition={data.CreateDisposition} Options={data.CreateOptions} Attributes={data.FileAttributes} " +
+        $"Disposition={data.CreateDisposition} Options={data.CreateOptions}(0x{(int)data.CreateOptions:X}) Attributes={data.FileAttributes} " +
         $"Share={data.ShareAccess} EtwTime={data.TimeStamp:HH:mm:ss.ffffff} Path={data.FileName}");
 };
 kernel.FileIOWrite += data =>
@@ -141,6 +151,38 @@ kernel.FileIODelete += data =>
     Log($"Delete PID={data.ProcessID} TID={data.ThreadID} Process={data.ProcessName} FileObject={data.FileObject:X} " +
         $"FileKey={data.FileKey:X} InfoClass={data.InfoClass} ExtraInfo={data.ExtraInfo:X} " +
         $"EtwTime={data.TimeStamp:HH:mm:ss.ffffff} Path={data.FileName}");
+};
+// 完全削除(Shift+Delete)がFileIODelete(FileDispositionInformationのSetInfo)に現れないケースを
+// 実機で確認したため、以下4種を追加購読する(元々6種のみだったが、リフレクションで判明した
+// KernelTraceEventParser の未購読イベントのうち、実削除の裏付けとして有望なもの)。
+kernel.FileIOFileDelete += data =>
+{
+    if (ShouldSkip(data.ProcessID, data.ProcessName, data.FileName)) return;
+    Interlocked.Increment(ref eventCount);
+    Log($"FileDelete PID={data.ProcessID} TID={data.ThreadID} Process={data.ProcessName} " +
+        $"FileKey={data.FileKey:X} EtwTime={data.TimeStamp:HH:mm:ss.ffffff} Path={data.FileName}");
+};
+kernel.FileIOSetInfo += data =>
+{
+    if (ShouldSkip(data.ProcessID, data.ProcessName, data.FileName)) return;
+    Interlocked.Increment(ref eventCount);
+    Log($"SetInfo PID={data.ProcessID} TID={data.ThreadID} Process={data.ProcessName} FileObject={data.FileObject:X} " +
+        $"FileKey={data.FileKey:X} InfoClass={data.InfoClass} ExtraInfo={data.ExtraInfo:X} " +
+        $"EtwTime={data.TimeStamp:HH:mm:ss.ffffff} Path={data.FileName}");
+};
+kernel.FileIOCleanup += data =>
+{
+    if (ShouldSkip(data.ProcessID, data.ProcessName, data.FileName)) return;
+    Interlocked.Increment(ref eventCount);
+    Log($"Cleanup PID={data.ProcessID} TID={data.ThreadID} Process={data.ProcessName} FileObject={data.FileObject:X} " +
+        $"FileKey={data.FileKey:X} EtwTime={data.TimeStamp:HH:mm:ss.ffffff} Path={data.FileName}");
+};
+kernel.FileIOClose += data =>
+{
+    if (ShouldSkip(data.ProcessID, data.ProcessName, data.FileName)) return;
+    Interlocked.Increment(ref eventCount);
+    Log($"Close  PID={data.ProcessID} TID={data.ThreadID} Process={data.ProcessName} FileObject={data.FileObject:X} " +
+        $"FileKey={data.FileKey:X} EtwTime={data.TimeStamp:HH:mm:ss.ffffff} Path={data.FileName}");
 };
 
 var processingTask = Task.Run(() => session.Source.Process());

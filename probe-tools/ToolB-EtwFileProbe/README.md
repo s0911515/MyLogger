@@ -12,7 +12,10 @@ ETW(Event Tracing for Windows)のカーネル FileIO イベントで実際に取
 ## 仕組み
 
 `Microsoft.Diagnostics.Tracing.TraceEvent`(ETWのカーネルプロバイダー、`FileIOInit | FileIO` キーワード)
-を使い、OSカーネルが発生させる生のファイルI/Oイベント(Create/Write/Read/Flush/Rename/Delete)を購読する。
+を使い、OSカーネルが発生させる生のファイルI/Oイベントを購読する。購読しているのは
+Create/Write/Read/Flush/Rename/Delete/FileDelete/SetInfo/Cleanup/Close の10種類(後半4種は、完全削除
+(Shift+Delete)の調査過程でリフレクションにより `KernelTraceEventParser` の全イベント一覧を洗い出し、
+追加で購読するようにしたもの。詳細は下記「ログサンプル」参照)。
 `FileSystemWatcher`(ToolA)とは全く別の取得経路であり、PID・プロセス名・詳細フラグまで取得できる点が
 最大の違い。ただし**ユーザー名は取得できない**(ETWのFileIOイベントにはユーザー/SIDの情報が無いことを
 リフレクションで確認済み)。ユーザー名が必要な場合は ToolC を併用する。
@@ -85,9 +88,20 @@ System
 共通項目: `PID`(プロセスID)、`TID`(スレッドID)、`Process`(プロセス名)、`FileObject`(カーネル
 オブジェクトのアドレス、同一ファイルハンドルの操作を紐付けるのに使える)、`EtwTime`(ETW生タイムスタンプ)、
 `Path`。イベント種別固有項目: Create=`Disposition`/`Options`/`Attributes`/`Share`、
-Write/Read=`FileKey`/`Offset`/`IoSize`/`IoFlags`、Rename/Delete=`FileKey`/`InfoClass`/`ExtraInfo`。
+Write/Read=`FileKey`/`Offset`/`IoSize`/`IoFlags`、Rename/Delete/SetInfo=`FileKey`/`InfoClass`/`ExtraInfo`、
+FileDelete=`FileKey`のみ、Cleanup/Close=`FileObject`/`FileKey`のみ。
 
 終了時に `EventsLost`(ETWバッファ溢れによる取りこぼし件数)も出力される。
+
+### 既知の制約: `Options`(CreateOptions)フィールドの表示名について
+
+TraceEventライブラリの`CreateOptions`列挙型は、表示名に誤って`FILE_ATTRIBUTE_*`(本来はファイル
+**属性**用の名前)を流用している。実際のビット位置は`NtCreateFile`の**CreateOptions**フラグ
+(`FILE_DIRECTORY_FILE=0x1`, `FILE_NON_DIRECTORY_FILE=0x40`, `FILE_DELETE_ON_CLOSE=0x1000` 等)であり、
+たまたま同じビット位置に`FileAttributes`の名前が割り当てられているだけで**意味が異なる**。実機の
+リフレクションで確認済み。このツールは`Options=`の直後に生の16進値も併記する
+(例: `Options=FILE_ATTRIBUTE_OFFLINE(0x1000)`)ので、正しく解釈したい場合はNtCreateFileの
+CreateOptionsフラグ表と照らし合わせること(`0x1000`は実際には`FILE_DELETE_ON_CLOSE`)。
 
 ## ログサンプル(実測、2026-07-15)
 
@@ -129,10 +143,19 @@ ToolA と同じ `D:\tmp\ProbeTest` に対して同じ7操作を行い記録し�
 | 4 | 移動(フォルダ間、切り取り&貼り付け) | `Create`複数 + `Rename`(`InfoClass=10`, `ExtraInfo=0`、パスは**移動元のまま**) | ToolAでは`Deleted`+`Created`だったが、ETWでは`Rename`1件になる。**移動先の新パスはこのイベントに含まれない** |
 | 5 | リネーム(同一フォルダ内) | `Create`複数 + `Rename`(`InfoClass=10`, `ExtraInfo=0`) | **#4(移動)と全く同じ形式。** ETW単体では「フォルダ間移動」と「同一フォルダ内リネーム」を区別できない(ToolAとは逆に、こちらはToolAの方が区別できる) |
 | 6 | 通常削除(ゴミ箱移動) | `Create`複数 + `Delete`(`InfoClass=13`)×2 + `Rename`(`InfoClass=10`) | ゴミ箱への移動は内部的に「削除」と「リネーム(ごみ箱内への移動)」の組み合わせで記録される。[doc/Sysmon/Sysmon.md](../../doc/Sysmon/Sysmon.md)の「通常削除はゴミ箱へのRename」という知見と一致 |
-| 7 | 完全削除(Shift+Delete) | `Create`複数(最後は`Share=Delete`のみのopen)まで確認 | **このセッションでは`Delete`イベント自体を確認する前にツールがクラッシュしたため未確認。** 下記のバグ修正後、再検証が望ましい |
+| 7 | 完全削除(Shift+Delete) | `Create`(最後は`Options=FILE_ATTRIBUTE_OFFLINE(0x1000)`=実際は`FILE_DELETE_ON_CLOSE`)のみ。`Delete`/`FileDelete`/`SetInfo`/`Cleanup`/`Close`いずれも記録されず | **バグではなく、この削除経路ではFileIOレイヤーに明示的な削除イベントが一切現れないと判明。** 詳細は下記「重要な発見」参照 |
 
 ### 重要な発見
 
+- **完全削除(Shift+Delete)はFileIOイベントとして明示的な「削除」の痕跡を残さないことがある。**
+  再検証(#7のみ再実施、ファイルが実際に消えたことも確認済み)で、`Delete`/`FileDelete`/`SetInfo`/
+  `Cleanup`/`Close`のいずれのイベントも記録されなかった。唯一の手がかりは最後の`Create`イベントの
+  `Options`に`FILE_DELETE_ON_CLOSE`(0x1000)ビットが立っていたことのみで、これは「ハンドルを閉じたら
+  自動的に削除する」という指定であり、別途Delete系のIRPが発行されない。**削除の証跡が、削除専用の
+  イベントではなく、Create時点のフラグにしか残らないケースがある**、という重要な制約が判明した
+- 上記の調査過程で、TraceEventの`CreateOptions`表示名が`FILE_ATTRIBUTE_*`を誤流用したバグ持ちである
+  ことも判明(詳細は上記「既知の制約」参照)。生の16進値を確認しなければ`FILE_DELETE_ON_CLOSE`の
+  検出は不可能だった
 - **ToolAとETWで「移動」と「リネーム」の区別能力が逆転している。** FileSystemWatcher(ToolA)は
   フォルダ間移動を`Deleted`+`Created`、同一フォルダ内リネームを`Renamed`と明確に区別する。一方ETW
   (本ツール)は両方とも同じ`Rename`イベント(`InfoClass=10`)になり区別できない。**2つを併用すれば、
@@ -141,12 +164,12 @@ ToolA と同じ `D:\tmp\ProbeTest` に対して同じ7操作を行い記録し�
 - **ETWの`Rename`イベントには移動・変更後の新パスが含まれない**(このツールが記録しているフィールド
   セットでは、旧パスのみが`Path`に出る)
 - 小サイズファイルのコピー先には`Write`イベントが記録されないことがある(Fast I/O経路のため)
-- ゴミ箱への通常削除は「削除」ではなく内部的に「リネーム(ごみ箱内への移動)」を伴う
+- ゴミ箱への通常削除(`InfoClass=13`)は「削除」ではなく内部的に「リネーム(ごみ箱内への移動)」を伴う
 
 ### 既知の不具合(発見・修正済み)
 
-このセッション実行時点のビルドには、終了処理で `session.Stop()` の**後**に `session.EventsLost` を
-読もうとして `COMException`(WMIプロバイダーがインスタンス名を認識できない)で異常終了するバグが
-あった。`EventsLost` は停止前に読む必要があると判明したため、`Stop()` 呼び出し前に読むよう修正済み
-(`dist/` のexeも再ビルド済み)。このバグにより#7の`Delete`イベントが記録される前にプロセスが
-異常終了した可能性がある。
+初回テスト時点のビルドには、終了処理で `session.Stop()` の**後**に `session.EventsLost` を読もうと
+して `COMException`(WMIプロバイダーがインスタンス名を認識できない)で異常終了するバグがあった。
+`EventsLost` は停止前に読む必要があると判明したため、`Stop()` 呼び出し前に読むよう修正済み
+(`dist/` のexeも再ビルド済み)。再検証ではこのバグは再発せず正常終了したが、それでも#7の削除
+イベントは記録されなかった(バグとは無関係な、上記「重要な発見」の通りの仕様)。
