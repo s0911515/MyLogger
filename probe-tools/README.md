@@ -14,6 +14,7 @@ MyLogger のファイル操作監視における「何が」「誰が」を、�
 | **ToolB-EtwFileProbe** | ファイルI/O(作成/読み書き/フラッシュ/リネーム/削除)。プロセスID・プロセス名・詳細フラグ付き | ETW カーネル FileIO プロバイダー | [README](ToolB-EtwFileProbe/README.md) |
 | **ToolC-ProcessAuditProbe** | プロセスが生成された瞬間の PID→ユーザー名の対応 | Windowsセキュリティ監査ログ(イベント4688、OS標準機能) | [README](ToolC-ProcessAuditProbe/README.md) |
 | **ToolD-Sysmon** | ファイル作成/コピー・完全削除等の比較用参考記録 | Sysinternals Sysmon(カーネルミニフィルタドライバー) | [README](ToolD-Sysmon/README.md) |
+| **ToolH-RecycleBinProbe** | ゴミ箱に格納されたファイルの元のパス・元のサイズ・削除日時 | `System.IO.FileSystemWatcher` + `$I`メタデータファイルのデコード | [README](ToolH-RecycleBinProbe/README.md) |
 
 ## ネットワークアクセス(SMB経由のファイル操作)
 
@@ -38,8 +39,8 @@ ToolB(ETWファイルイベント、PIDのみ)と ToolC(プロセス生成、PID
 ## 事前準備(共通)
 
 - Windows 10/11 または Windows Server(x64)
-- ToolA を除く各ツールは**管理者権限のPowerShell**で実行してください(ETW/監査ポリシー/セキュリティ
-  ログの購読に必要です)
+- ToolA・ToolH を除く各ツールは**管理者権限のPowerShell**で実行してください(ETW/監査ポリシー/
+  セキュリティログの購読に必要です)
 - ToolF/G(アウトバウンドSMB)の検証には、実際にアクセスできる**別マシンの共有フォルダ**が必要です。
   ToolE(インバウンドSMB)の検証には、このマシン上に共有フォルダを用意し、別マシンからアクセスして
   もらう必要があります(詳細は各READMEの「事前準備」を参照)
@@ -56,6 +57,7 @@ ToolB(ETWファイルイベント、PIDのみ)と ToolC(プロセス生成、PID
 dotnet publish probe-tools\ToolA-FsWatcherProbe -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolA-FsWatcherProbe\dist
 dotnet publish probe-tools\ToolB-EtwFileProbe   -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolB-EtwFileProbe\dist
 dotnet publish probe-tools\ToolC-ProcessAuditProbe -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolC-ProcessAuditProbe\dist
+dotnet publish probe-tools\ToolH-RecycleBinProbe   -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolH-RecycleBinProbe\dist
 dotnet publish probe-tools\ToolE-SmbServerAuditProbe    -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolE-SmbServerAuditProbe\dist
 dotnet publish probe-tools\ToolF-SmbClientEventLogProbe -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolF-SmbClientEventLogProbe\dist
 dotnet publish probe-tools\ToolG-SmbClientEtwProbe      -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolG-SmbClientEtwProbe\dist

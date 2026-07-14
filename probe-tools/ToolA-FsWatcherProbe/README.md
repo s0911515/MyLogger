@@ -117,8 +117,10 @@ ETWでは取れない情報がFileSystemWatcher側で取れる好例であり、
 ([ToolB-EtwFileProbe/README.md](../ToolB-EtwFileProbe/README.md) 参照)。
 
 なお、ToolB(ETW)は`$RECYCLE.BIN`配下を大量ノイズ(既存アイテム全件のメタデータ再走査)のため既定で
-除外しており、この情報は取得できない。$RECYCLE.BINの実パスを知りたい場合は本ツール(ToolA)を
-ドライブ全体で使う必要がある。
+除外しており、この情報は取得できない。本ツール(ToolA)をドライブ全体で使えば`$R...`への`Created`は
+見えるが、それだけでは「削除される前の元のパス」までは分からない(`$R...`はランダムな名前にリネーム
+されているため)。元のパスまで解決したい場合は、`$I...`メタデータファイルをデコードする専用ツール
+[ToolH-RecycleBinProbe](../ToolH-RecycleBinProbe) を使うこと。
 
 既知の事実(詳細は [doc/FileSystemWatcher調査.md](../../doc/FileSystemWatcher調査.md) 参照):
 
