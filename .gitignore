@@ -12,3 +12,7 @@ publish/
 # Logs (アクティビティログは C:\ProgramData\MyLogger\logs だが念のため)
 *.jsonl
 logs/
+
+# probe-tools の実行時ログ・自動生成される設定ファイル (dist/配下、テスト実行のたびに生成される)
+probe-tools/**/dist/*.log
+probe-tools/**/bin/**/*.log
