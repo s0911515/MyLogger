@@ -130,8 +130,31 @@ ToolA と同じ `D:\tmp\ProbeTest` に対して同じ7操作を行い記録し�
 [00:01:46.462691] Delete PID=20040 Process=explorer  InfoClass=13 ExtraInfo=0 Path=delete_normal.txt
 [00:01:46.463035] Rename PID=20040 Process=explorer  InfoClass=10 ExtraInfo=0 Path=delete_normal.txt (ごみ箱への移動もRenameとして記録される)
 [00:01:48.675037] Create PID=20040 Process=explorer  Disposition=OPEN_EXISTING Share=Delete Path=delete_complete.txt
-(この直後、ツール終了時のバグにより Delete イベントの記録前にクラッシュ。下記「既知の不具合」参照)
 ```
+
+#7(完全削除)のみ、バグ修正・イベント追加購読後に再検証した(2回、いずれも同じ結果で再現性を確認):
+
+```
+[05:32:13.680074] Create PID=20040 Process=explorer Disposition=OPEN_EXISTING Options=2097152(0x200000) Share=ReadWrite, Delete Path=delete_complete.txt
+[05:32:13.691125] Create PID=20040 Process=explorer Disposition=OPEN_EXISTING Options=FILE_ATTRIBUTE_ARCHIVE(0x20)         Share=ReadWrite, Delete Path=delete_complete.txt
+[05:32:14.701412] Create PID=20040 Process=explorer Disposition=OPEN_EXISTING Options=FILE_ATTRIBUTE_DEVICE, FILE_ATTRIBUTE_OFFLINE(0x1040) Share=Delete Path=delete_complete.txt
+[05:32:21.414096] === EtwFileProbe 終了 (出力イベント数=48, EventsLost=0) === (Delete/FileDelete/SetInfo/Cleanup/Closeいずれも記録されず、ファイルは実際に消滅)
+```
+
+`0x1040 = FILE_NON_DIRECTORY_FILE(0x40) | FILE_DELETE_ON_CLOSE(0x1000)`。2回とも同じビットが立っており、
+再現性のある挙動と確認できた。
+
+再検証時、コピー操作(#3)では追加購読した `SetInfo` により以下も観測できた(前回は見えていなかった):
+
+```
+Create  PID=20040 Process=explorer Disposition=CREATE_NEW Path=copy_source.txt (コピー先)
+SetInfo PID=20040 Process=explorer InfoClass=20 ExtraInfo=12 Path=copy_source.txt (FileEndOfFileInformation: ファイルサイズ確定)
+SetInfo PID=20040 Process=explorer InfoClass=4  ExtraInfo=0  Path=copy_source.txt (FileBasicInformation: タイムスタンプ/属性設定)
+```
+
+**コピー先への`Write`イベントは今回も記録されなかったが、`SetInfo`(`InfoClass=20`=EOF設定)がコピー完了の
+間接的な裏付けとして使える**ことが分かった。新規作成(#1)でも `CREATE_NEW` 直後に
+`SetInfo(InfoClass=19` = `FileAllocationInformation`, 領域確保`)` が付随することを確認した。
 
 ### 操作と記録されたイベントの対応
 
@@ -139,19 +162,19 @@ ToolA と同じ `D:\tmp\ProbeTest` に対して同じ7操作を行い記録し�
 |---|---|---|---|
 | 1 | 新規作成 | `Create`(`Disposition=CREATE_NEW`)1件 + `Create`(`OPEN_EXISTING`、Explorerの再オープン)複数 | `Disposition`で「真の新規作成」と「既存を開いただけ」を区別できる |
 | 2 | 上書き保存(Hidemaruで編集) | `Create`(Explorer/Hidemaru双方から複数)+ `Read`×3(Offset 0, 0, 30)+ `Write`(Offset=0, IoSize=34) | **実際の書き込みオフセット・バイト数まで取得できる**(ToolAには無い情報)。副次的にHidemaruが`ProbeTest`→`D:\tmp`→`D:\`と上位フォルダの`.editorconfig`を探索する様子まで見えた |
-| 3 | コピー | コピー元への`Create`+`Read`(IoSize=18)、コピー先への`Create`(`CREATE_NEW`) | **コピー先への`Write`イベントが記録されなかった。** 小サイズファイルはキャッシュマネージャーのFast I/O経路で処理されIRPが発生しないためと考えられる(過去のLOCAL_COPY検知試作時の知見と一致) |
+| 3 | コピー | コピー元への`Create`+`Read`(IoSize=18)、コピー先への`Create`(`CREATE_NEW`)+`SetInfo`(`InfoClass=20`=EOF設定、`InfoClass=4`=タイムスタンプ設定) | **コピー先への`Write`イベントは今回も記録されなかった。** 小サイズファイルはキャッシュマネージャーのFast I/O経路で処理されIRPが発生しないためと考えられる(過去のLOCAL_COPY検知試作時の知見と一致)。ただし`SetInfo`(EOF設定)がコピー完了の間接的な裏付けとして使える |
 | 4 | 移動(フォルダ間、切り取り&貼り付け) | `Create`複数 + `Rename`(`InfoClass=10`, `ExtraInfo=0`、パスは**移動元のまま**) | ToolAでは`Deleted`+`Created`だったが、ETWでは`Rename`1件になる。**移動先の新パスはこのイベントに含まれない** |
 | 5 | リネーム(同一フォルダ内) | `Create`複数 + `Rename`(`InfoClass=10`, `ExtraInfo=0`) | **#4(移動)と全く同じ形式。** ETW単体では「フォルダ間移動」と「同一フォルダ内リネーム」を区別できない(ToolAとは逆に、こちらはToolAの方が区別できる) |
 | 6 | 通常削除(ゴミ箱移動) | `Create`複数 + `Delete`(`InfoClass=13`)×2 + `Rename`(`InfoClass=10`) | ゴミ箱への移動は内部的に「削除」と「リネーム(ごみ箱内への移動)」の組み合わせで記録される。[doc/Sysmon/Sysmon.md](../../doc/Sysmon/Sysmon.md)の「通常削除はゴミ箱へのRename」という知見と一致 |
-| 7 | 完全削除(Shift+Delete) | `Create`(最後は`Options=FILE_ATTRIBUTE_OFFLINE(0x1000)`=実際は`FILE_DELETE_ON_CLOSE`)のみ。`Delete`/`FileDelete`/`SetInfo`/`Cleanup`/`Close`いずれも記録されず | **バグではなく、この削除経路ではFileIOレイヤーに明示的な削除イベントが一切現れないと判明。** 詳細は下記「重要な発見」参照 |
+| 7 | 完全削除(Shift+Delete) | `Create`(最後は`Options=FILE_ATTRIBUTE_OFFLINE(0x1040)`=実際は`FILE_NON_DIRECTORY_FILE`\|`FILE_DELETE_ON_CLOSE`)のみ。`Delete`/`FileDelete`/`SetInfo`/`Cleanup`/`Close`いずれも記録されず(2回再現) | **バグではなく、この削除経路ではFileIOレイヤーに明示的な削除イベントが一切現れないと判明。** 詳細は下記「重要な発見」参照 |
 
 ### 重要な発見
 
-- **完全削除(Shift+Delete)はFileIOイベントとして明示的な「削除」の痕跡を残さないことがある。**
-  再検証(#7のみ再実施、ファイルが実際に消えたことも確認済み)で、`Delete`/`FileDelete`/`SetInfo`/
-  `Cleanup`/`Close`のいずれのイベントも記録されなかった。唯一の手がかりは最後の`Create`イベントの
-  `Options`に`FILE_DELETE_ON_CLOSE`(0x1000)ビットが立っていたことのみで、これは「ハンドルを閉じたら
-  自動的に削除する」という指定であり、別途Delete系のIRPが発行されない。**削除の証跡が、削除専用の
+- **完全削除(Shift+Delete)はFileIOイベントとして明示的な「削除」の痕跡を残さないことがある(2回の
+  再検証で再現性を確認済み)。** ファイルが実際に消滅したことも確認した上で、`Delete`/`FileDelete`/
+  `SetInfo`/`Cleanup`/`Close`のいずれのイベントも記録されなかった。唯一の手がかりは最後の`Create`
+  イベントの`Options`に`FILE_DELETE_ON_CLOSE`(0x1000)ビットが立っていたことのみで、これは「ハンドルを
+  閉じたら自動的に削除する」という指定であり、別途Delete系のIRPが発行されない。**削除の証跡が、削除専用の
   イベントではなく、Create時点のフラグにしか残らないケースがある**、という重要な制約が判明した
 - 上記の調査過程で、TraceEventの`CreateOptions`表示名が`FILE_ATTRIBUTE_*`を誤流用したバグ持ちである
   ことも判明(詳細は上記「既知の制約」参照)。生の16進値を確認しなければ`FILE_DELETE_ON_CLOSE`の
