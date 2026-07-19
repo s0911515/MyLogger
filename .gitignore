@@ -15,4 +15,9 @@ logs/
 
 # probe-tools の実行時ログ・自動生成される設定ファイル (dist/配下、テスト実行のたびに生成される)
 probe-tools/**/dist/*.log
+probe-tools/**/dist/*.csv
 probe-tools/**/bin/**/*.log
+probe-tools/**/bin/**/*.csv
+probe-tools/ToolI-SaclProbe/saclprobe.log
+probe-tools/ToolI-SaclProbe/saclprobe.summary.csv
+probe-tools/ToolI-SaclProbe/saclprobe.readable.csv

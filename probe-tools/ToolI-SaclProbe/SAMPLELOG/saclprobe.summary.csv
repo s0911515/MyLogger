@@ -1,0 +1,525 @@
+﻿時刻,EventID,イベント種別,分類,対象,対象種別,対象種別備考,プロセス名,プロセスID,ユーザー,アクセス内容,HandleId,RecordId
+2026-07-20 06:57:46.422713,4907,SACL変更,シグナル,D:\tmp\ProbeTest\delete_complete.txt,ファイル,拡張子から推定(ファイルシステムは未確認),D:\DEV\MyLogger\probe-tools\ToolI-SaclProbe\dist\SaclProbe.exe,0x4670,WIN-DESK-2022\s0911,,0x3dc,3913273
+2026-07-20 06:57:46.422841,4907,SACL変更,シグナル,D:\tmp\ProbeTest\delete_folder_complete\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),D:\DEV\MyLogger\probe-tools\ToolI-SaclProbe\dist\SaclProbe.exe,0x4670,WIN-DESK-2022\s0911,,0x3e4,3913274
+2026-07-20 06:57:46.422913,4907,SACL変更,シグナル,D:\tmp\ProbeTest\delete_folder_complete,フォルダ,Directory.Existsで確認,D:\DEV\MyLogger\probe-tools\ToolI-SaclProbe\dist\SaclProbe.exe,0x4670,WIN-DESK-2022\s0911,,0x3e8,3913275
+2026-07-20 06:57:46.423055,4907,SACL変更,シグナル,D:\tmp\ProbeTest\delete_folder_normal\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),D:\DEV\MyLogger\probe-tools\ToolI-SaclProbe\dist\SaclProbe.exe,0x4670,WIN-DESK-2022\s0911,,0x3dc,3913276
+2026-07-20 06:57:46.423112,4907,SACL変更,シグナル,D:\tmp\ProbeTest\delete_folder_normal,フォルダ,Directory.Existsで確認,D:\DEV\MyLogger\probe-tools\ToolI-SaclProbe\dist\SaclProbe.exe,0x4670,WIN-DESK-2022\s0911,,0x3e4,3913277
+2026-07-20 06:57:46.423198,4907,SACL変更,シグナル,D:\tmp\ProbeTest\delete_normal.txt,ファイル,拡張子から推定(ファイルシステムは未確認),D:\DEV\MyLogger\probe-tools\ToolI-SaclProbe\dist\SaclProbe.exe,0x4670,WIN-DESK-2022\s0911,,0x3dc,3913278
+2026-07-20 06:57:46.423336,4907,SACL変更,シグナル,D:\tmp\ProbeTest\Source\copy_source.txt,ファイル,拡張子から推定(ファイルシステムは未確認),D:\DEV\MyLogger\probe-tools\ToolI-SaclProbe\dist\SaclProbe.exe,0x4670,WIN-DESK-2022\s0911,,0x3e8,3913279
+2026-07-20 06:57:46.423414,4907,SACL変更,シグナル,D:\tmp\ProbeTest\Source\move_source.txt,ファイル,拡張子から推定(ファイルシステムは未確認),D:\DEV\MyLogger\probe-tools\ToolI-SaclProbe\dist\SaclProbe.exe,0x4670,WIN-DESK-2022\s0911,,0x3ec,3913280
+2026-07-20 06:57:46.423542,4907,SACL変更,シグナル,D:\tmp\ProbeTest\Source\rename_source.txt,ファイル,拡張子から推定(ファイルシステムは未確認),D:\DEV\MyLogger\probe-tools\ToolI-SaclProbe\dist\SaclProbe.exe,0x4670,WIN-DESK-2022\s0911,,0x3e8,3913281
+2026-07-20 06:57:46.423547,4907,SACL変更,シグナル,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,D:\DEV\MyLogger\probe-tools\ToolI-SaclProbe\dist\SaclProbe.exe,0x4670,WIN-DESK-2022\s0911,,0x3e4,3913282
+2026-07-20 06:57:46.423752,4907,SACL変更,シグナル,D:\tmp\ProbeTest\SourceFolders\CopyFolderSource\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),D:\DEV\MyLogger\probe-tools\ToolI-SaclProbe\dist\SaclProbe.exe,0x4670,WIN-DESK-2022\s0911,,0x3f4,3913283
+2026-07-20 06:57:46.423828,4907,SACL変更,シグナル,D:\tmp\ProbeTest\SourceFolders\CopyFolderSource,フォルダ,Directory.Existsで確認,D:\DEV\MyLogger\probe-tools\ToolI-SaclProbe\dist\SaclProbe.exe,0x4670,WIN-DESK-2022\s0911,,0x3dc,3913284
+2026-07-20 06:57:46.423971,4907,SACL変更,シグナル,D:\tmp\ProbeTest\SourceFolders\MoveFolderSource\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),D:\DEV\MyLogger\probe-tools\ToolI-SaclProbe\dist\SaclProbe.exe,0x4670,WIN-DESK-2022\s0911,,0x3ec,3913285
+2026-07-20 06:57:46.423986,4907,SACL変更,シグナル,D:\tmp\ProbeTest\SourceFolders\MoveFolderSource,フォルダ,Directory.Existsで確認,D:\DEV\MyLogger\probe-tools\ToolI-SaclProbe\dist\SaclProbe.exe,0x4670,WIN-DESK-2022\s0911,,0x3f4,3913286
+2026-07-20 06:57:46.424136,4907,SACL変更,シグナル,D:\tmp\ProbeTest\SourceFolders\RenameFolderSource\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),D:\DEV\MyLogger\probe-tools\ToolI-SaclProbe\dist\SaclProbe.exe,0x4670,WIN-DESK-2022\s0911,,0x3dc,3913287
+2026-07-20 06:57:46.424204,4907,SACL変更,シグナル,D:\tmp\ProbeTest\SourceFolders\RenameFolderSource,フォルダ,Directory.Existsで確認,D:\DEV\MyLogger\probe-tools\ToolI-SaclProbe\dist\SaclProbe.exe,0x4670,WIN-DESK-2022\s0911,,0x3ec,3913288
+2026-07-20 06:57:46.424258,4907,SACL変更,シグナル,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,D:\DEV\MyLogger\probe-tools\ToolI-SaclProbe\dist\SaclProbe.exe,0x4670,WIN-DESK-2022\s0911,,0x3e8,3913289
+2026-07-20 06:57:46.424327,4907,SACL変更,シグナル,D:\tmp\ProbeTest\write_target.txt,ファイル,拡張子から推定(ファイルシステムは未確認),D:\DEV\MyLogger\probe-tools\ToolI-SaclProbe\dist\SaclProbe.exe,0x4670,WIN-DESK-2022\s0911,,0x3ec,3913290
+2026-07-20 06:57:46.424376,4907,SACL変更,シグナル,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,D:\DEV\MyLogger\probe-tools\ToolI-SaclProbe\dist\SaclProbe.exe,0x4670,WIN-DESK-2022\s0911,,0x38c,3913291
+2026-07-20 06:57:47.312851,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5d10,3913294
+2026-07-20 06:57:47.312855,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5d10,3913295
+2026-07-20 06:57:47.312887,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5d10,3913296
+2026-07-20 06:57:47.312987,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5d10,3913299
+2026-07-20 06:57:47.313005,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5d10,3913300
+2026-07-20 06:57:47.313007,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5d10,3913301
+2026-07-20 06:57:47.313138,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5470,3913304
+2026-07-20 06:57:47.313142,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5470,3913305
+2026-07-20 06:57:47.313155,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5470,3913306
+2026-07-20 06:57:47.313250,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5470,3913309
+2026-07-20 06:57:47.313255,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5470,3913310
+2026-07-20 06:57:47.313257,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5470,3913311
+2026-07-20 06:57:51.010956,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\新規 テキスト ドキュメント.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"Write, Read, ChangePermissions, Synchronize (0x16019F)",0x5d9c,3913341
+2026-07-20 06:57:51.010967,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\新規 テキスト ドキュメント.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,CreateFiles (0x2),0x5d9c,3913342
+2026-07-20 06:57:51.011274,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\新規 テキスト ドキュメント.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5d9c,3913344
+2026-07-20 06:57:51.017398,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5570,3913348
+2026-07-20 06:57:51.017418,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5570,3913349
+2026-07-20 06:57:51.017435,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5570,3913350
+2026-07-20 06:57:52.881878,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\新規 テキスト ドキュメント.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ReadAttributes, Delete, Synchronize (0x110080)",0x6110,3913353
+2026-07-20 06:57:52.881883,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\新規 テキスト ドキュメント.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,Delete (0x10000),0x6110,3913354
+2026-07-20 06:57:52.881893,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"CreateFiles, Synchronize (0x100002)",0x88e0,3913355
+2026-07-20 06:57:52.881896,4663,アクセス試行,シグナル,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,CreateFiles (0x2),0x88e0,3913356
+2026-07-20 06:57:52.882051,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x88e0,3913357
+2026-07-20 06:57:52.882055,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\新規 テキスト ドキュメント.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6110,3913358
+2026-07-20 06:57:52.882509,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5600,3913361
+2026-07-20 06:57:52.882513,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5600,3913362
+2026-07-20 06:57:52.882724,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5ff4,3913365
+2026-07-20 06:57:52.882727,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5ff4,3913366
+2026-07-20 06:57:52.892329,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x541c,3913369
+2026-07-20 06:57:52.892332,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x541c,3913370
+2026-07-20 06:57:52.892333,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x541c,3913371
+2026-07-20 06:57:52.904390,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x66d4,3913374
+2026-07-20 06:57:52.904393,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x66d4,3913375
+2026-07-20 06:57:52.904395,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x66d4,3913376
+2026-07-20 06:57:52.904529,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x66d4,3913379
+2026-07-20 06:57:52.904534,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x66d4,3913380
+2026-07-20 06:57:52.904537,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x66d4,3913381
+2026-07-20 06:57:52.906101,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, Synchronize (0x100001)",0x1c74,3913384
+2026-07-20 06:57:52.906106,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x1c74,3913385
+2026-07-20 06:57:52.906109,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x1c74,3913386
+2026-07-20 06:57:52.922561,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6378,3913389
+2026-07-20 06:57:52.922564,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6378,3913390
+2026-07-20 06:57:52.922566,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6378,3913391
+2026-07-20 06:57:54.310772,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5450,3913400
+2026-07-20 06:57:54.310776,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5450,3913401
+2026-07-20 06:57:54.310778,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5450,3913402
+2026-07-20 06:57:54.377657,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,"ListDirectory, Synchronize (0x100001)",0x264,3913406
+2026-07-20 06:57:54.377677,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,ListDirectory (0x1),0x264,3913407
+2026-07-20 06:57:54.377691,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,,0x264,3913408
+2026-07-20 06:57:54.377853,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,"ListDirectory, Synchronize (0x100001)",0x264,3913411
+2026-07-20 06:57:54.377856,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,ListDirectory (0x1),0x264,3913412
+2026-07-20 06:57:54.377861,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,,0x264,3913413
+2026-07-20 06:57:54.599798,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,"ListDirectory, Synchronize (0x100001)",0x220,3913416
+2026-07-20 06:57:54.599801,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,ListDirectory (0x1),0x220,3913417
+2026-07-20 06:57:54.599814,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,,0x220,3913418
+2026-07-20 06:57:54.599975,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\write_target.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,"Write, Read, Synchronize (0x12019F)",0x440,3913421
+2026-07-20 06:57:54.602798,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,"ListDirectory, Synchronize (0x100001)",0x444,3913424
+2026-07-20 06:57:54.602811,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,ListDirectory (0x1),0x444,3913425
+2026-07-20 06:57:54.602819,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,,0x444,3913426
+2026-07-20 06:57:54.603047,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\write_target.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,ListDirectory (0x1),0x440,3913427
+2026-07-20 06:57:54.603453,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\write_target.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,,0x440,3913428
+2026-07-20 06:57:54.625299,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x478,3913431
+2026-07-20 06:57:54.625305,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,ListDirectory (0x1),0x478,3913432
+2026-07-20 06:57:54.625307,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,,0x478,3913433
+2026-07-20 06:57:56.351315,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\write_target.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,"Write, Read, Synchronize (0x12019F)",0x544,3913440
+2026-07-20 06:57:56.351357,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\write_target.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,"CreateFiles, CreateDirectories (0x6)",0x544,3913441
+2026-07-20 06:57:56.351533,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\write_target.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,,0x544,3913442
+2026-07-20 06:57:56.352614,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\write_target.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,"Read, Synchronize (0x120089)",0x298,3913445
+2026-07-20 06:57:56.352616,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\write_target.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,,0x298,3913446
+2026-07-20 06:57:56.357183,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x29c,3913449
+2026-07-20 06:57:56.357187,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,ListDirectory (0x1),0x29c,3913450
+2026-07-20 06:57:56.357189,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Program Files (x86)\Hidemaru\Hidemaru.exe,0xa530,WIN-DESK-2022\s0911,,0x29c,3913451
+2026-07-20 06:57:56.366770,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0xb38,3913454
+2026-07-20 06:57:56.366774,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0xb38,3913455
+2026-07-20 06:57:56.366775,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0xb38,3913456
+2026-07-20 06:57:59.595906,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\delete_normal.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ReadAttributes, Delete, Synchronize (0x110080)",0x5508,3913459
+2026-07-20 06:57:59.595909,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\delete_normal.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5508,3913460
+2026-07-20 06:57:59.596115,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x67c4,3913463
+2026-07-20 06:57:59.596119,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x67c4,3913464
+2026-07-20 06:57:59.596120,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x67c4,3913465
+2026-07-20 06:57:59.597118,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\delete_normal.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ReadAttributes, Delete, ReadPermissions, Synchronize (0x130080)",0x6a04,3913468
+2026-07-20 06:57:59.597128,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\delete_normal.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,Delete (0x10000),0x6a04,3913469
+2026-07-20 06:57:59.597145,4660,削除,シグナル,D:\tmp\ProbeTest\delete_normal.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6a04,3913470
+2026-07-20 06:57:59.598288,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5600,3913472
+2026-07-20 06:57:59.598320,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5ff4,3913473
+2026-07-20 06:57:59.616476,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\delete_normal.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ReadAttributes, Delete, Synchronize (0x110080)",0x68d8,3913481
+2026-07-20 06:57:59.616493,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\delete_normal.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,Delete (0x10000),0x68d8,3913482
+2026-07-20 06:57:59.616595,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\delete_normal.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x68d8,3913486
+2026-07-20 06:57:59.618102,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5ff4,3913491
+2026-07-20 06:57:59.618105,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5ff4,3913492
+2026-07-20 06:57:59.618289,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5600,3913495
+2026-07-20 06:57:59.618292,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5600,3913496
+2026-07-20 06:58:00.706818,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\delete_complete.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ReadAttributes, Delete, Synchronize (0x110080)",0x624c,3914003
+2026-07-20 06:58:00.706820,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\delete_complete.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x624c,3914004
+2026-07-20 06:58:00.707062,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5360,3914007
+2026-07-20 06:58:00.707073,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5360,3914008
+2026-07-20 06:58:00.707082,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5360,3914009
+2026-07-20 06:58:00.708433,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x3d74,3914012
+2026-07-20 06:58:00.708437,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x3d74,3914013
+2026-07-20 06:58:00.708438,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x3d74,3914014
+2026-07-20 06:58:01.422240,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5ff4,3914015
+2026-07-20 06:58:01.422291,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5600,3914016
+2026-07-20 06:58:01.423687,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\delete_complete.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,Delete (0x10000),0x5478,3914020
+2026-07-20 06:58:01.423691,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\delete_complete.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5478,3914021
+2026-07-20 06:58:01.425205,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5bd8,3914024
+2026-07-20 06:58:01.425211,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5bd8,3914025
+2026-07-20 06:58:01.425384,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6618,3914028
+2026-07-20 06:58:01.425389,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6618,3914029
+2026-07-20 06:58:02.543355,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6494,3914032
+2026-07-20 06:58:02.543358,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6494,3914033
+2026-07-20 06:58:02.543567,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6654,3914036
+2026-07-20 06:58:02.543627,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6654,3914037
+2026-07-20 06:58:02.543808,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x66c0,3914040
+2026-07-20 06:58:02.543814,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x66c0,3914041
+2026-07-20 06:58:02.555841,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6bbc,3914044
+2026-07-20 06:58:02.555845,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6bbc,3914045
+2026-07-20 06:58:02.555920,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6bbc,3914046
+2026-07-20 06:58:02.575714,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5bd8,3914047
+2026-07-20 06:58:02.575776,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6618,3914048
+2026-07-20 06:58:03.820337,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x60d0,3914051
+2026-07-20 06:58:03.820339,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x60d0,3914052
+2026-07-20 06:58:03.820623,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5bd8,3914055
+2026-07-20 06:58:03.820645,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5bd8,3914056
+2026-07-20 06:58:03.820705,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5500,3914059
+2026-07-20 06:58:03.820724,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5500,3914060
+2026-07-20 06:58:03.831510,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x54e0,3914063
+2026-07-20 06:58:03.831514,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x54e0,3914064
+2026-07-20 06:58:03.831516,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x54e0,3914065
+2026-07-20 06:58:03.849858,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6654,3914066
+2026-07-20 06:58:03.849925,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x66c0,3914067
+2026-07-20 06:58:04.494693,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5520,3914070
+2026-07-20 06:58:04.494694,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5520,3914071
+2026-07-20 06:58:04.494954,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x55f8,3914074
+2026-07-20 06:58:04.494959,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x55f8,3914075
+2026-07-20 06:58:04.495044,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6914,3914078
+2026-07-20 06:58:04.495047,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6914,3914079
+2026-07-20 06:58:04.502818,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x60d4,3914082
+2026-07-20 06:58:04.502821,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x60d4,3914083
+2026-07-20 06:58:04.502848,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x60d4,3914084
+2026-07-20 06:58:04.517798,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5bd8,3914085
+2026-07-20 06:58:04.517853,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5500,3914086
+2026-07-20 06:58:08.327159,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x55f8,3914088
+2026-07-20 06:58:08.327177,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6914,3914089
+2026-07-20 06:58:08.328009,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\Source\rename_source.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ReadAttributes, Delete, Synchronize (0x110080)",0x55f8,3914092
+2026-07-20 06:58:08.328013,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\Source\rename_source.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,Delete (0x10000),0x55f8,3914093
+2026-07-20 06:58:08.328034,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"CreateFiles, Synchronize (0x100002)",0x81b4,3914094
+2026-07-20 06:58:08.328036,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,CreateFiles (0x2),0x81b4,3914095
+2026-07-20 06:58:08.328217,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x81b4,3914096
+2026-07-20 06:58:08.328221,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\Source\rename_source.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x55f8,3914097
+2026-07-20 06:58:08.328912,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5d00,3914100
+2026-07-20 06:58:08.328915,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5d00,3914101
+2026-07-20 06:58:08.329153,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x586c,3914104
+2026-07-20 06:58:08.329165,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x586c,3914105
+2026-07-20 06:58:08.336409,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x58e0,3914108
+2026-07-20 06:58:08.336412,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x58e0,3914109
+2026-07-20 06:58:08.336414,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x58e0,3914110
+2026-07-20 06:58:08.337435,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x58e0,3914113
+2026-07-20 06:58:08.337445,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x58e0,3914114
+2026-07-20 06:58:08.337449,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x58e0,3914115
+2026-07-20 06:58:08.338265,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x58e0,3914118
+2026-07-20 06:58:08.338268,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x58e0,3914119
+2026-07-20 06:58:08.338270,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x58e0,3914120
+2026-07-20 06:58:08.339153,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5d20,3914123
+2026-07-20 06:58:08.339156,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5d20,3914124
+2026-07-20 06:58:08.339159,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5d20,3914125
+2026-07-20 06:58:08.339643,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x62c4,3914128
+2026-07-20 06:58:08.339647,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x62c4,3914129
+2026-07-20 06:58:08.339649,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x62c4,3914130
+2026-07-20 06:58:08.346455,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5fc0,3914133
+2026-07-20 06:58:08.346459,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5fc0,3914134
+2026-07-20 06:58:08.346483,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5fc0,3914135
+2026-07-20 06:58:08.346589,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5fc0,3914138
+2026-07-20 06:58:08.346613,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5fc0,3914139
+2026-07-20 06:58:08.346616,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5fc0,3914140
+2026-07-20 06:58:10.135423,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6a34,3914143
+2026-07-20 06:58:10.135424,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6a34,3914144
+2026-07-20 06:58:10.135957,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5610,3914147
+2026-07-20 06:58:10.136015,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5610,3914148
+2026-07-20 06:58:10.136516,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6774,3914151
+2026-07-20 06:58:10.136536,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6774,3914152
+2026-07-20 06:58:10.147037,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x24d0,3914155
+2026-07-20 06:58:10.147040,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x24d0,3914156
+2026-07-20 06:58:10.147106,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x24d0,3914157
+2026-07-20 06:58:10.164067,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5d00,3914158
+2026-07-20 06:58:10.164080,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x586c,3914159
+2026-07-20 06:58:10.486923,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, Synchronize (0x100001)",0x6ae8,3914162
+2026-07-20 06:58:10.486939,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6ae8,3914163
+2026-07-20 06:58:10.486946,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6ae8,3914164
+2026-07-20 06:58:10.505728,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5610,3914165
+2026-07-20 06:58:10.505861,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6774,3914166
+2026-07-20 06:58:10.508084,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\Source\copy_source.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"Read, Synchronize (0x120089)",0x55f4,3914169
+2026-07-20 06:58:10.508208,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\copy_source.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"Write, Delete, Read, ChangePermissions, Synchronize (0x17019F)",0x5cc0,3914172
+2026-07-20 06:58:10.508309,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\copy_source.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ChangePermissions (0x40000),0x60d0,3914176
+2026-07-20 06:58:10.508336,4670,権限変更,シグナル,D:\tmp\ProbeTest\copy_source.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x60d0,3914177
+2026-07-20 06:58:10.508337,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\copy_source.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x60d0,3914178
+2026-07-20 06:58:10.508344,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\copy_source.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,CreateFiles (0x2),0x5cc0,3914179
+2026-07-20 06:58:10.508383,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\Source\copy_source.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x55f4,3914182
+2026-07-20 06:58:10.508387,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\copy_source.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,CreateDirectories (0x4),0x5cc0,3914183
+2026-07-20 06:58:10.508537,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\copy_source.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,WriteAttributes (0x100),0x5cc0,3914184
+2026-07-20 06:58:10.508539,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\copy_source.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5cc0,3914185
+2026-07-20 06:58:10.508540,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\Source\copy_source.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x55f4,3914186
+2026-07-20 06:58:10.508796,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, Synchronize (0x100001)",0x55f4,3914189
+2026-07-20 06:58:10.508798,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x55f4,3914190
+2026-07-20 06:58:10.508806,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x55f4,3914191
+2026-07-20 06:58:10.509834,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x608c,3914196
+2026-07-20 06:58:10.509837,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x608c,3914197
+2026-07-20 06:58:10.509930,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5360,3914200
+2026-07-20 06:58:10.509938,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5360,3914201
+2026-07-20 06:58:10.511128,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5c2c,3914204
+2026-07-20 06:58:10.511131,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5c2c,3914205
+2026-07-20 06:58:10.511133,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5c2c,3914206
+2026-07-20 06:58:10.512272,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5c2c,3914209
+2026-07-20 06:58:10.512282,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5c2c,3914210
+2026-07-20 06:58:10.512284,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5c2c,3914211
+2026-07-20 06:58:10.520394,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x2a18,3914214
+2026-07-20 06:58:10.520398,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x2a18,3914215
+2026-07-20 06:58:10.520401,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x2a18,3914216
+2026-07-20 06:58:10.557212,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6528,3914219
+2026-07-20 06:58:10.557216,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6528,3914220
+2026-07-20 06:58:10.557250,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6528,3914221
+2026-07-20 06:58:11.594341,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5f94,3914224
+2026-07-20 06:58:11.594343,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5f94,3914225
+2026-07-20 06:58:11.594508,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5cc4,3914228
+2026-07-20 06:58:11.594528,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5cc4,3914229
+2026-07-20 06:58:11.594682,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6b80,3914232
+2026-07-20 06:58:11.594685,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6b80,3914233
+2026-07-20 06:58:11.601470,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6370,3914236
+2026-07-20 06:58:11.601474,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6370,3914237
+2026-07-20 06:58:11.601572,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6370,3914238
+2026-07-20 06:58:11.617013,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x608c,3914239
+2026-07-20 06:58:11.617020,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5360,3914240
+2026-07-20 06:58:13.219467,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x3530,3914243
+2026-07-20 06:58:13.219551,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x3530,3914244
+2026-07-20 06:58:13.220000,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x1024,3914247
+2026-07-20 06:58:13.220003,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x1024,3914248
+2026-07-20 06:58:13.220215,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5ab0,3914251
+2026-07-20 06:58:13.220218,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5ab0,3914252
+2026-07-20 06:58:13.231372,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x260c,3914255
+2026-07-20 06:58:13.231375,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x260c,3914256
+2026-07-20 06:58:13.231381,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x260c,3914257
+2026-07-20 06:58:13.248629,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5cc4,3914258
+2026-07-20 06:58:13.248687,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6b80,3914259
+2026-07-20 06:58:13.600181,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, Synchronize (0x100001)",0x46ac,3914262
+2026-07-20 06:58:13.600185,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x46ac,3914263
+2026-07-20 06:58:13.600186,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x46ac,3914264
+2026-07-20 06:58:13.625993,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x1024,3914265
+2026-07-20 06:58:13.626065,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5ab0,3914266
+2026-07-20 06:58:13.628213,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, Synchronize (0x100001)",0x5494,3914269
+2026-07-20 06:58:13.628217,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5494,3914270
+2026-07-20 06:58:13.628237,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5494,3914271
+2026-07-20 06:58:13.629233,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\Source\move_source.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ReadAttributes, Delete, Synchronize (0x110080)",0x5494,3914274
+2026-07-20 06:58:13.629236,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\Source\move_source.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,Delete (0x10000),0x5494,3914275
+2026-07-20 06:58:13.629274,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"CreateFiles, Synchronize (0x100002)",0x862c,3914276
+2026-07-20 06:58:13.629277,4663,アクセス試行,シグナル,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,CreateFiles (0x2),0x862c,3914277
+2026-07-20 06:58:13.629448,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x862c,3914278
+2026-07-20 06:58:13.629502,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\Source\move_source.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5494,3914279
+2026-07-20 06:58:13.629766,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5494,3914282
+2026-07-20 06:58:13.629785,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5494,3914283
+2026-07-20 06:58:13.629787,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5494,3914284
+2026-07-20 06:58:13.630877,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5494,3914287
+2026-07-20 06:58:13.630880,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5494,3914288
+2026-07-20 06:58:13.630995,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5d04,3914291
+2026-07-20 06:58:13.631014,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5d04,3914292
+2026-07-20 06:58:13.637592,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x62c4,3914295
+2026-07-20 06:58:13.637596,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x62c4,3914296
+2026-07-20 06:58:13.637598,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x62c4,3914297
+2026-07-20 06:58:13.639227,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x4a60,3914300
+2026-07-20 06:58:13.639230,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x4a60,3914301
+2026-07-20 06:58:13.639232,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x4a60,3914302
+2026-07-20 06:58:13.681845,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x54d8,3914305
+2026-07-20 06:58:13.681849,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x54d8,3914306
+2026-07-20 06:58:13.681864,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x54d8,3914307
+2026-07-20 06:58:13.683420,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x607c,3914310
+2026-07-20 06:58:13.683427,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x607c,3914311
+2026-07-20 06:58:13.683444,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x607c,3914312
+2026-07-20 06:58:15.596325,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x68bc,3914315
+2026-07-20 06:58:15.596329,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x68bc,3914316
+2026-07-20 06:58:15.596331,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x68bc,3914317
+2026-07-20 06:58:15.596860,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\delete_folder_normal,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x68bc,3914320
+2026-07-20 06:58:15.596864,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\delete_folder_normal,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x68bc,3914321
+2026-07-20 06:58:15.596872,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\delete_folder_normal,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x68bc,3914322
+2026-07-20 06:58:15.596973,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, Synchronize (0x100001)",0x68bc,3914325
+2026-07-20 06:58:15.596976,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x68bc,3914326
+2026-07-20 06:58:15.596977,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x68bc,3914327
+2026-07-20 06:58:15.597041,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\delete_folder_normal\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ReadAttributes, Delete, ReadPermissions, Synchronize (0x130080)",0x68bc,3914330
+2026-07-20 06:58:15.597044,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\delete_folder_normal\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,Delete (0x10000),0x68bc,3914331
+2026-07-20 06:58:15.597056,4660,削除,シグナル,D:\tmp\ProbeTest\delete_folder_normal\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x68bc,3914332
+2026-07-20 06:58:15.597148,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\delete_folder_normal,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ReadAttributes, Delete, ReadPermissions, Synchronize (0x130080)",0x68bc,3914336
+2026-07-20 06:58:15.597150,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\delete_folder_normal,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,Delete (0x10000),0x68bc,3914337
+2026-07-20 06:58:15.597160,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\delete_folder_normal,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x68bc,3914338
+2026-07-20 06:58:15.597882,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5494,3914339
+2026-07-20 06:58:15.597946,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5d04,3914340
+2026-07-20 06:58:15.599774,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\delete_folder_normal,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ReadAttributes, Delete, Synchronize (0x110080)",0x55f8,3914348
+2026-07-20 06:58:15.599777,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\delete_folder_normal,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,Delete (0x10000),0x55f8,3914349
+2026-07-20 06:58:15.600033,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\delete_folder_normal,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x55f8,3914353
+2026-07-20 06:58:15.601363,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5fc0,3914358
+2026-07-20 06:58:15.601366,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5fc0,3914359
+2026-07-20 06:58:15.601770,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6654,3914362
+2026-07-20 06:58:15.601842,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6654,3914363
+2026-07-20 06:58:16.115393,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5600,3914870
+2026-07-20 06:58:16.115397,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5600,3914871
+2026-07-20 06:58:16.115398,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\Source,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5600,3914872
+2026-07-20 06:58:16.952080,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5450,3914875
+2026-07-20 06:58:16.952083,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5450,3914876
+2026-07-20 06:58:16.952102,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5450,3914877
+2026-07-20 06:58:16.953309,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x686c,3914880
+2026-07-20 06:58:16.953312,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x686c,3914881
+2026-07-20 06:58:16.953313,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x686c,3914882
+2026-07-20 06:58:17.543538,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\delete_folder_complete,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x64e4,3914885
+2026-07-20 06:58:17.543542,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\delete_folder_complete,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x64e4,3914886
+2026-07-20 06:58:17.543579,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\delete_folder_complete,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x64e4,3914887
+2026-07-20 06:58:17.544673,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5fc0,3914888
+2026-07-20 06:58:17.544729,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6654,3914889
+2026-07-20 06:58:17.547046,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\delete_folder_complete,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ReadAttributes, Delete, Synchronize (0x110080)",0x5dc0,3914892
+2026-07-20 06:58:17.547050,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\delete_folder_complete,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,Delete (0x10000),0x5dc0,3914893
+2026-07-20 06:58:17.547076,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\delete_folder_complete,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5dc0,3914894
+2026-07-20 06:58:17.547566,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\delete_folder_complete\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,Delete (0x10000),0x5dc0,3914898
+2026-07-20 06:58:17.547568,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\delete_folder_complete\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5dc0,3914899
+2026-07-20 06:58:17.547854,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, Synchronize (0x100001)",0x5dc0,3914902
+2026-07-20 06:58:17.547858,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5dc0,3914903
+2026-07-20 06:58:17.547870,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5dc0,3914904
+2026-07-20 06:58:17.547979,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\delete_folder_complete,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ReadAttributes, Delete, Synchronize (0x110080)",0x5dc0,3914907
+2026-07-20 06:58:17.547982,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\delete_folder_complete,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,Delete (0x10000),0x5dc0,3914908
+2026-07-20 06:58:17.547985,4660,削除,シグナル,D:\tmp\ProbeTest\delete_folder_complete,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5dc0,3914909
+2026-07-20 06:58:17.551009,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x577c,3914913
+2026-07-20 06:58:17.551013,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x577c,3914914
+2026-07-20 06:58:17.551181,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x4a24,3914917
+2026-07-20 06:58:17.551184,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x4a24,3914918
+2026-07-20 06:58:18.514542,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x618c,3914921
+2026-07-20 06:58:18.514543,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x618c,3914922
+2026-07-20 06:58:18.514861,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x3f5c,3914925
+2026-07-20 06:58:18.514866,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x3f5c,3914926
+2026-07-20 06:58:18.514988,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5460,3914929
+2026-07-20 06:58:18.514992,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5460,3914930
+2026-07-20 06:58:18.522997,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6950,3914933
+2026-07-20 06:58:18.523001,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6950,3914934
+2026-07-20 06:58:18.523002,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6950,3914935
+2026-07-20 06:58:18.543061,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x577c,3914936
+2026-07-20 06:58:18.543136,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x4a24,3914937
+2026-07-20 06:58:20.075872,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x69b8,3914940
+2026-07-20 06:58:20.075874,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x69b8,3914941
+2026-07-20 06:58:20.076136,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x568c,3914944
+2026-07-20 06:58:20.076139,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x568c,3914945
+2026-07-20 06:58:20.076261,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5494,3914948
+2026-07-20 06:58:20.076264,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5494,3914949
+2026-07-20 06:58:20.086021,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x648c,3914952
+2026-07-20 06:58:20.086025,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x648c,3914953
+2026-07-20 06:58:20.086100,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x648c,3914954
+2026-07-20 06:58:20.103118,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x3f5c,3914955
+2026-07-20 06:58:20.103199,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5460,3914956
+2026-07-20 06:58:20.473163,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, Synchronize (0x100001)",0x5310,3914959
+2026-07-20 06:58:20.473167,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5310,3914960
+2026-07-20 06:58:20.473220,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5310,3914961
+2026-07-20 06:58:20.493480,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders\CopyFolderSource,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x577c,3914964
+2026-07-20 06:58:20.493483,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders\CopyFolderSource,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x577c,3914965
+2026-07-20 06:58:20.493485,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders\CopyFolderSource,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x577c,3914966
+2026-07-20 06:58:20.494711,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x568c,3914967
+2026-07-20 06:58:20.494739,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5494,3914968
+2026-07-20 06:58:20.497158,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders\CopyFolderSource,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"Read, Synchronize (0x120089)",0x643c,3914971
+2026-07-20 06:58:20.497390,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\CopyFolderSource,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, Synchronize (0x100001)",0x301c,3914974
+2026-07-20 06:58:20.497392,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\CopyFolderSource,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x301c,3914975
+2026-07-20 06:58:20.497466,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\CopyFolderSource,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"CreateFiles, WriteExtendedAttributes, WriteAttributes, Delete, Read, ChangePermissions, Synchronize (0x17019B)",0x301c,3914978
+2026-07-20 06:58:20.497470,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\CopyFolderSource,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,WriteAttributes (0x100),0x301c,3914979
+2026-07-20 06:58:20.497593,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders\CopyFolderSource,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x643c,3914980
+2026-07-20 06:58:20.497597,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\CopyFolderSource,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x301c,3914981
+2026-07-20 06:58:20.499242,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders\CopyFolderSource\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"Read, Synchronize (0x120089)",0x301c,3914984
+2026-07-20 06:58:20.499403,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\CopyFolderSource\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"Write, Delete, Read, ChangePermissions, Synchronize (0x17019F)",0x6708,3914987
+2026-07-20 06:58:20.499545,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\CopyFolderSource\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ChangePermissions (0x40000),0x643c,3914991
+2026-07-20 06:58:20.499620,4670,権限変更,シグナル,D:\tmp\ProbeTest\CopyFolderSource\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x643c,3914992
+2026-07-20 06:58:20.499627,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\CopyFolderSource\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x643c,3914993
+2026-07-20 06:58:20.499638,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\CopyFolderSource\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,CreateFiles (0x2),0x6708,3914994
+2026-07-20 06:58:20.499660,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders\CopyFolderSource\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x301c,3914997
+2026-07-20 06:58:20.499668,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\CopyFolderSource\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,CreateDirectories (0x4),0x6708,3914998
+2026-07-20 06:58:20.499919,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\CopyFolderSource\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,WriteAttributes (0x100),0x6708,3914999
+2026-07-20 06:58:20.500000,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\CopyFolderSource\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6708,3915000
+2026-07-20 06:58:20.500010,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders\CopyFolderSource\inner.txt,ファイル,拡張子から推定(ファイルシステムは未確認),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x301c,3915001
+2026-07-20 06:58:20.500633,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders\CopyFolderSource,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, Synchronize (0x100001)",0x301c,3915004
+2026-07-20 06:58:20.500637,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders\CopyFolderSource,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x301c,3915005
+2026-07-20 06:58:20.500639,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders\CopyFolderSource,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x301c,3915006
+2026-07-20 06:58:20.502084,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6ae8,3915011
+2026-07-20 06:58:20.502087,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6ae8,3915012
+2026-07-20 06:58:20.502280,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5d6c,3915015
+2026-07-20 06:58:20.502300,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5d6c,3915016
+2026-07-20 06:58:20.504179,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x55a4,3915019
+2026-07-20 06:58:20.504204,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x55a4,3915020
+2026-07-20 06:58:20.504214,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x55a4,3915021
+2026-07-20 06:58:20.505551,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x686c,3915024
+2026-07-20 06:58:20.505593,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x686c,3915025
+2026-07-20 06:58:20.505595,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x686c,3915026
+2026-07-20 06:58:20.516344,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5460,3915029
+2026-07-20 06:58:20.516349,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5460,3915030
+2026-07-20 06:58:20.516350,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5460,3915031
+2026-07-20 06:58:20.556312,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6b80,3915034
+2026-07-20 06:58:20.556316,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6b80,3915035
+2026-07-20 06:58:20.556329,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6b80,3915036
+2026-07-20 06:58:21.833230,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x4c64,3915039
+2026-07-20 06:58:21.833336,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x4c64,3915040
+2026-07-20 06:58:21.833538,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5d34,3915043
+2026-07-20 06:58:21.833542,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5d34,3915044
+2026-07-20 06:58:21.833672,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x62c0,3915047
+2026-07-20 06:58:21.833675,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x62c0,3915048
+2026-07-20 06:58:21.840412,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x669c,3915051
+2026-07-20 06:58:21.840417,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x669c,3915052
+2026-07-20 06:58:21.840496,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x669c,3915053
+2026-07-20 06:58:21.855979,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6ae8,3915054
+2026-07-20 06:58:21.856064,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5d6c,3915055
+2026-07-20 06:58:23.265554,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6bcc,3915058
+2026-07-20 06:58:23.265564,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6bcc,3915059
+2026-07-20 06:58:23.266071,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6390,3915062
+2026-07-20 06:58:23.266075,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6390,3915063
+2026-07-20 06:58:23.266217,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x4b04,3915066
+2026-07-20 06:58:23.266220,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x4b04,3915067
+2026-07-20 06:58:23.275614,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x618c,3915070
+2026-07-20 06:58:23.275618,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x618c,3915071
+2026-07-20 06:58:23.275675,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x618c,3915072
+2026-07-20 06:58:23.295366,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5d34,3915073
+2026-07-20 06:58:23.295445,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x62c0,3915074
+2026-07-20 06:58:23.632968,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, Synchronize (0x100001)",0x6b74,3915077
+2026-07-20 06:58:23.632972,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6b74,3915078
+2026-07-20 06:58:23.632973,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6b74,3915079
+2026-07-20 06:58:23.654975,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6390,3915080
+2026-07-20 06:58:23.655019,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x4b04,3915081
+2026-07-20 06:58:23.657784,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, Synchronize (0x100001)",0x4b04,3915084
+2026-07-20 06:58:23.657787,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x4b04,3915085
+2026-07-20 06:58:23.657789,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x4b04,3915086
+2026-07-20 06:58:23.658497,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\SourceFolders\MoveFolderSource,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ReadAttributes, Delete, Synchronize (0x110080)",0x4b04,3915089
+2026-07-20 06:58:23.658501,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\SourceFolders\MoveFolderSource,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,Delete (0x10000),0x4b04,3915090
+2026-07-20 06:58:23.658511,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"CreateDirectories, Synchronize (0x100004)",0x59e4,3915091
+2026-07-20 06:58:23.658514,4663,アクセス試行,シグナル,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,CreateDirectories (0x4),0x59e4,3915092
+2026-07-20 06:58:23.658679,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x59e4,3915093
+2026-07-20 06:58:23.658705,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\SourceFolders\MoveFolderSource,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x4b04,3915094
+2026-07-20 06:58:23.658940,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x4b04,3915097
+2026-07-20 06:58:23.658943,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x4b04,3915098
+2026-07-20 06:58:23.658981,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x4b04,3915099
+2026-07-20 06:58:23.660035,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x48a4,3915102
+2026-07-20 06:58:23.660039,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x48a4,3915103
+2026-07-20 06:58:23.660191,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x580c,3915106
+2026-07-20 06:58:23.660194,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x580c,3915107
+2026-07-20 06:58:23.786544,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5ff0,3915110
+2026-07-20 06:58:23.786552,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5ff0,3915111
+2026-07-20 06:58:23.786555,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5ff0,3915112
+2026-07-20 06:58:23.788345,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5494,3915115
+2026-07-20 06:58:23.788349,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5494,3915116
+2026-07-20 06:58:23.788366,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5494,3915117
+2026-07-20 06:58:23.798317,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x20b8,3915120
+2026-07-20 06:58:23.798324,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x20b8,3915121
+2026-07-20 06:58:23.798333,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x20b8,3915122
+2026-07-20 06:58:23.833560,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6374,3915125
+2026-07-20 06:58:23.833565,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6374,3915126
+2026-07-20 06:58:23.833567,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6374,3915127
+2026-07-20 06:58:24.915303,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6020,3915130
+2026-07-20 06:58:24.915305,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6020,3915131
+2026-07-20 06:58:24.915510,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6a40,3915134
+2026-07-20 06:58:24.915514,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6a40,3915135
+2026-07-20 06:58:24.915670,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x68d8,3915138
+2026-07-20 06:58:24.915673,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x68d8,3915139
+2026-07-20 06:58:24.924231,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x3dbc,3915142
+2026-07-20 06:58:24.924236,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x3dbc,3915143
+2026-07-20 06:58:24.924341,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x3dbc,3915144
+2026-07-20 06:58:24.942407,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x48a4,3915145
+2026-07-20 06:58:24.942483,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x580c,3915146
+2026-07-20 06:58:28.802025,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6a40,3915147
+2026-07-20 06:58:28.802084,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x68d8,3915148
+2026-07-20 06:58:28.803113,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\SourceFolders\RenameFolderSource,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ReadAttributes, Delete, Synchronize (0x110080)",0x6a40,3915151
+2026-07-20 06:58:28.803116,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\SourceFolders\RenameFolderSource,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,Delete (0x10000),0x6a40,3915152
+2026-07-20 06:58:28.803122,4656,ハンドル要求,シグナル,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"CreateDirectories, Synchronize (0x100004)",0x6d54,3915153
+2026-07-20 06:58:28.803125,4663,アクセス試行,シグナル,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,CreateDirectories (0x4),0x6d54,3915154
+2026-07-20 06:58:28.803365,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6d54,3915155
+2026-07-20 06:58:28.803367,4658,ハンドルクローズ,シグナル,D:\tmp\ProbeTest\SourceFolders\RenameFolderSource,判別不明,拡張子なし、かつ記録時点で対象が存在しないため判定不能(削除・リネーム等の可能性),C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6a40,3915156
+2026-07-20 06:58:28.803788,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6278,3915159
+2026-07-20 06:58:28.803791,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6278,3915160
+2026-07-20 06:58:28.803942,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5cc4,3915163
+2026-07-20 06:58:28.803947,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5cc4,3915164
+2026-07-20 06:58:28.931249,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6630,3915167
+2026-07-20 06:58:28.931261,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6630,3915168
+2026-07-20 06:58:28.931263,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6630,3915169
+2026-07-20 06:58:28.932153,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6630,3915172
+2026-07-20 06:58:28.932157,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6630,3915173
+2026-07-20 06:58:28.932159,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6630,3915174
+2026-07-20 06:58:28.932837,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6630,3915177
+2026-07-20 06:58:28.932840,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6630,3915178
+2026-07-20 06:58:28.932842,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6630,3915179
+2026-07-20 06:58:28.933776,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x60d4,3915182
+2026-07-20 06:58:28.933793,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x60d4,3915183
+2026-07-20 06:58:28.933813,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x60d4,3915184
+2026-07-20 06:58:28.934418,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6034,3915187
+2026-07-20 06:58:28.934421,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6034,3915188
+2026-07-20 06:58:28.934423,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6034,3915189
+2026-07-20 06:58:28.942946,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5910,3915192
+2026-07-20 06:58:28.942950,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5910,3915193
+2026-07-20 06:58:28.942952,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5910,3915194
+2026-07-20 06:58:28.943066,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5910,3915197
+2026-07-20 06:58:28.943069,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5910,3915198
+2026-07-20 06:58:28.943094,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5910,3915199
+2026-07-20 06:58:30.141114,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x54c8,3915202
+2026-07-20 06:58:30.141116,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x54c8,3915203
+2026-07-20 06:58:30.141541,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x4898,3915206
+2026-07-20 06:58:30.141546,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x4898,3915207
+2026-07-20 06:58:30.141717,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x5768,3915210
+2026-07-20 06:58:30.141719,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x5768,3915211
+2026-07-20 06:58:30.151721,4656,ハンドル要求,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,"ListDirectory, ReadAttributes, Synchronize (0x100081)",0x6894,3915214
+2026-07-20 06:58:30.151728,4663,アクセス試行,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,ListDirectory (0x1),0x6894,3915215
+2026-07-20 06:58:30.151826,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6894,3915216
+2026-07-20 06:58:30.170706,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x6278,3915217
+2026-07-20 06:58:30.170764,4658,ハンドルクローズ,閲覧のみ,D:\tmp\ProbeTest\SourceFolders,フォルダ,Directory.Existsで確認,C:\Windows\explorer.exe,0x119c,WIN-DESK-2022\s0911,,0x5cc4,3915218

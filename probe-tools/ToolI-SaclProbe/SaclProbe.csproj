@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>SaclProbe</RootNamespace>
+    <AssemblyName>SaclProbe</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Diagnostics.EventLog" Version="8.0.1" />
+  </ItemGroup>
+
+  <!-- LogFormatterは独立した別プロジェクト(別exe)。既定のワイルドカードで取り込まれると
+       トップレベルステートメントが重複してビルドが壊れるため、明示的に除外する。 -->
+  <ItemGroup>
+    <Compile Remove="LogFormatter/**" />
+    <Content Remove="LogFormatter/**" />
+    <None Remove="LogFormatter/**" />
+    <EmbeddedResource Remove="LogFormatter/**" />
+  </ItemGroup>
+
+</Project>

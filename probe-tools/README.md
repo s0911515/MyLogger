@@ -15,6 +15,7 @@ MyLogger のファイル操作監視における「何が」「誰が」を、�
 | **ToolC-ProcessAuditProbe** | プロセスが生成された瞬間の PID→ユーザー名の対応 | Windowsセキュリティ監査ログ(イベント4688、OS標準機能) | [README](ToolC-ProcessAuditProbe/README.md) |
 | **ToolD-Sysmon** | ファイル作成/コピー・完全削除等の比較用参考記録 | Sysinternals Sysmon(カーネルミニフィルタドライバー) | [README](ToolD-Sysmon/README.md) |
 | **ToolH-RecycleBinProbe** | ゴミ箱に格納されたファイルの元のパス・元のサイズ・削除日時 | `System.IO.FileSystemWatcher` + `$I`メタデータファイルのデコード | [README](ToolH-RecycleBinProbe/README.md) |
+| **ToolI-SaclProbe** | 指定フォルダにSACL(監査ACE)を設定し、以後のアクセス(ハンドル要求/アクセス試行/削除/権限変更/SACL変更自体)を記録。ユーザー名・プロセス名・AccessMask付き | Windowsセキュリティ監査ログ(イベント4656/4658/4660/4663/4670/4907、OS標準機能) | [README](ToolI-SaclProbe/README.md) |
 
 ## ネットワークアクセス(SMB経由のファイル操作)
 
@@ -58,6 +59,8 @@ dotnet publish probe-tools\ToolA-FsWatcherProbe -c Release -r win-x64 --self-con
 dotnet publish probe-tools\ToolB-EtwFileProbe   -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolB-EtwFileProbe\dist
 dotnet publish probe-tools\ToolC-ProcessAuditProbe -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolC-ProcessAuditProbe\dist
 dotnet publish probe-tools\ToolH-RecycleBinProbe   -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolH-RecycleBinProbe\dist
+dotnet publish probe-tools\ToolI-SaclProbe         -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolI-SaclProbe\dist
+dotnet publish probe-tools\ToolI-SaclProbe\LogFormatter -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolI-SaclProbe\LogFormatter\dist
 dotnet publish probe-tools\ToolE-SmbServerAuditProbe    -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolE-SmbServerAuditProbe\dist
 dotnet publish probe-tools\ToolF-SmbClientEventLogProbe -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolF-SmbClientEventLogProbe\dist
 dotnet publish probe-tools\ToolG-SmbClientEtwProbe      -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o probe-tools\ToolG-SmbClientEtwProbe\dist
