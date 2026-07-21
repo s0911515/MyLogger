@@ -1,0 +1,1239 @@
+[06:35:28.647155] === SmbServerAuditProbe(ツールE: インバウンドSMB 共有アクセス監査 イベント5140/5142-5145) 開始 ログ=smbtest.log ===
+[06:35:28.701806] 監視開始。プロセス終了(Ctrl+C / kill)まで待機します。
+[06:36:42.773165] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:36:41.748799
+[06:36:42.774488] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:36:41.750315
+[06:36:42.775026] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:36:41.750604
+[06:36:50.310085] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=New Text Document.txt AccessMask=0x16019f AccessList=%%1538
+				%%1539
+				%%1541
+				%%4416
+				%%4417
+				%%4418
+				%%4419
+				%%4420
+				%%4423
+				%%4424
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%1539:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4417:	%%1801	D:(A;;FA;;;WD)
+				%%4418:	%%1801	D:(A;;FA;;;WD)
+				%%4419:	%%1801	D:(A;;FA;;;WD)
+				%%4420:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				%%4424:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:36:49.299666
+[06:36:50.310953] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=New Text Document.txt AccessMask=0x2 AccessList=%%4417
+				 AccessReason=%%4417:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:36:49.299679
+[06:36:50.311281] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:36:49.334603
+[06:36:51.326917] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=New Text Document.txt AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:36:50.325892
+[06:36:51.327534] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=New Text Document.txt AccessMask=0x110080 AccessList=%%1537
+				%%1541
+				%%4423
+				 AccessReason=%%1537:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:36:51.128761
+[06:36:51.328057] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:36:51.131092
+[06:36:51.328666] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:36:51.134940
+[06:36:51.329055] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:36:51.135095
+[06:36:51.329529] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:36:51.147516
+[06:36:51.329885] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:36:51.204744
+[06:36:51.330267] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:36:51.209021
+[06:36:51.330564] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=new.txt AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:36:51.230062
+[06:36:51.330923] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:36:51.240392
+[06:36:51.331716] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=new.txt AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:36:51.243164
+[06:36:51.332068] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:36:51.252394
+[06:36:53.131164] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=new.txt AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:36:52.122160
+[06:37:02.599887] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:01.761427
+[06:37:02.600275] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=write_target.txt AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:01.770518
+[06:37:02.600616] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:01.783559
+[06:37:02.600982] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:01.786335
+[06:37:02.601278] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=write_target.txt AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:01.797285
+[06:37:02.601548] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=write_target.txt AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:01.803749
+[06:37:02.601742] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:01.806113
+[06:37:02.602031] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=write_target.txt AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:01.808840
+[06:37:02.602479] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:01.817528
+[06:37:03.884011] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=write_target.txt AccessMask=0x120089 AccessList=%%1538
+				%%1541
+				%%4416
+				%%4419
+				%%4423
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4419:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:02.867689
+[06:37:03.884532] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:03.437200
+[06:37:06.316475] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=WRITE_TARGET.TXT AccessMask=0x12019f AccessList=%%1538
+				%%1541
+				%%4416
+				%%4417
+				%%4418
+				%%4419
+				%%4420
+				%%4423
+				%%4424
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4417:	%%1801	D:(A;;FA;;;WD)
+				%%4418:	%%1801	D:(A;;FA;;;WD)
+				%%4419:	%%1801	D:(A;;FA;;;WD)
+				%%4420:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				%%4424:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:05.305816
+[06:37:06.316983] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=WRITE_TARGET.TXT AccessMask=0x2 AccessList=%%4417
+				 AccessReason=%%4417:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:05.305824
+[06:37:07.332219] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=write_target.txt AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:06.325274
+[06:37:11.494219] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=delete_normal.txt AccessMask=0x110080 AccessList=%%1537
+				%%1541
+				%%4423
+				 AccessReason=%%1537:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:10.479385
+[06:37:13.332134] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x120089 AccessList=%%1538
+				%%1541
+				%%4416
+				%%4419
+				%%4423
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4419:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:12.323058
+[06:37:13.332527] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=delete_normal.txt AccessMask=0x10080 AccessList=%%1537
+				%%4423
+				 AccessReason=%%1537:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:12.333171
+[06:37:13.332878] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:12.336016
+[06:37:13.333153] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:12.336263
+[06:37:14.748879] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=delete_complete.txt AccessMask=0x110080 AccessList=%%1537
+				%%1541
+				%%4423
+				 AccessReason=%%1537:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:13.745289
+[06:37:14.749249] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x120089 AccessList=%%1538
+				%%1541
+				%%4416
+				%%4419
+				%%4423
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4419:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:14.506126
+[06:37:14.749577] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=delete_complete.txt AccessMask=0x10080 AccessList=%%1537
+				%%4423
+				 AccessReason=%%1537:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:14.510910
+[06:37:14.749874] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:14.514389
+[06:37:14.750151] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:14.514966
+[06:37:17.297844] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=Source AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:16.295410
+[06:37:17.298242] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=Source AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:16.297335
+[06:37:17.298622] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=Source AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:16.297551
+[06:37:17.299042] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=Source AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:16.305301
+[06:37:22.410741] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=Source\rename_source.txt AccessMask=0x110080 AccessList=%%1537
+				%%1541
+				%%4423
+				 AccessReason=%%1537:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:21.408923
+[06:37:22.411051] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SOURCE AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:21.410624
+[06:37:22.411333] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=Source AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:21.413294
+[06:37:22.411658] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=Source AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:21.413497
+[06:37:22.411909] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:21.424824
+[06:37:22.412109] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:21.426479
+[06:37:22.412356] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=Source AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:21.429422
+[06:37:22.412642] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=Source\rename_source_hoge.txt AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:22.403282
+[06:37:24.261115] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:23.238460
+[06:37:24.261705] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:23.238794
+[06:37:24.262368] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x120089 AccessList=%%1538
+				%%1541
+				%%4416
+				%%4419
+				%%4423
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4419:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:24.099320
+[06:37:24.262696] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=Source\copy_source.txt AccessMask=0x120089 AccessList=%%1538
+				%%1541
+				%%4416
+				%%4419
+				%%4423
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4419:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:24.105087
+[06:37:24.263616] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=copy_source.txt AccessMask=0x17019f AccessList=%%1537
+				%%1538
+				%%1539
+				%%1541
+				%%4416
+				%%4417
+				%%4418
+				%%4419
+				%%4420
+				%%4423
+				%%4424
+				 AccessReason=%%1537:	%%1801	D:(A;;FA;;;WD)
+				%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%1539:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4417:	%%1801	D:(A;;FA;;;WD)
+				%%4418:	%%1801	D:(A;;FA;;;WD)
+				%%4419:	%%1801	D:(A;;FA;;;WD)
+				%%4420:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				%%4424:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:24.109316
+[06:37:24.264247] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=copy_source.txt AccessMask=0x2 AccessList=%%4417
+				 AccessReason=%%4417:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:24.109328
+[06:37:24.264781] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=copy_source.txt AccessMask=0x80 AccessList=%%4423
+				 AccessReason=%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:24.112491
+[06:37:24.265030] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=copy_source.txt:Zone.Identifier AccessMask=0x80 AccessList=%%4423
+				 AccessReason=%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:24.114646
+[06:37:24.265313] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=copy_source.txt AccessMask=0x80 AccessList=%%4423
+				 AccessReason=%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:24.115306
+[06:37:24.265726] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=copy_source.txt AccessMask=0x80 AccessList=%%4423
+				 AccessReason=%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:24.116166
+[06:37:24.265988] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=copy_source.txt:Zone.Identifier AccessMask=0x12019f AccessList=%%1538
+				%%1541
+				%%4416
+				%%4417
+				%%4418
+				%%4419
+				%%4420
+				%%4423
+				%%4424
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4417:	%%1801	D:(A;;FA;;;WD)
+				%%4418:	%%1801	D:(A;;FA;;;WD)
+				%%4419:	%%1801	D:(A;;FA;;;WD)
+				%%4420:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				%%4424:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:24.117412
+[06:37:24.266592] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=copy_source.txt:Zone.Identifier AccessMask=0x2 AccessList=%%4417
+				 AccessReason=%%4417:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:24.117420
+[06:37:24.266933] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:24.170143
+[06:37:24.267383] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:24.170395
+[06:37:24.268040] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=Source AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:24.173497
+[06:37:24.268388] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:24.190683
+[06:37:24.268949] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=Source AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:24.193441
+[06:37:24.269491] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:24.199361
+[06:37:25.299968] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=copy_source.txt AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:25.106359
+[06:37:25.300302] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=copy_source.txt:Zone.Identifier AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:25.107801
+[06:37:25.300757] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=copy_source.txt:Zone.Identifier AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:25.109277
+[06:37:26.421026] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=Source AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:25.404841
+[06:37:26.421391] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=Source AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:25.404912
+[06:37:28.119033] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:27.114268
+[06:37:28.119477] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:27.114474
+[06:37:28.119771] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x120089 AccessList=%%1538
+				%%1541
+				%%4416
+				%%4419
+				%%4423
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4419:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:27.646184
+[06:37:28.120007] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=Source\move_source.txt AccessMask=0x20080 AccessList=%%1538
+				%%4423
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:27.657859
+[06:37:28.120254] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=Source\move_source.txt AccessMask=0x110080 AccessList=%%1537
+				%%1541
+				%%4423
+				 AccessReason=%%1537:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:27.659381
+[06:37:28.120535] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:27.661178
+[06:37:28.120848] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x80 AccessList=%%4423
+				 AccessReason=%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:27.662543
+[06:37:28.121123] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SOURCE AccessMask=0x20080 AccessList=%%1538
+				%%4423
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:27.663479
+[06:37:28.121426] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x20080 AccessList=%%1538
+				%%4423
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:27.664426
+[06:37:28.121698] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:27.665823
+[06:37:28.121992] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:27.668734
+[06:37:28.122248] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:27.669094
+[06:37:28.122490] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:27.676228
+[06:37:29.658698] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=move_source.txt AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:28.653596
+[06:37:29.659035] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=Source AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:29.301264
+[06:37:29.659299] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=Source AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:29.301415
+[06:37:31.513330] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:30.501012
+[06:37:31.513619] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:30.501197
+[06:37:34.325383] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=delete_folder_normal AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:33.312514
+[06:37:37.461192] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x120089 AccessList=%%1538
+				%%1541
+				%%4416
+				%%4419
+				%%4423
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4419:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:36.449247
+[06:37:37.461421] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=DELETE_FOLDER_NORMAL AccessMask=0x110080 AccessList=%%1537
+				%%1541
+				%%4423
+				 AccessReason=%%1537:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:36.492966
+[06:37:37.461611] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=delete_folder_normal\inner.txt AccessMask=0x10080 AccessList=%%1537
+				%%4423
+				 AccessReason=%%1537:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:36.495896
+[06:37:37.461803] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=DELETE_FOLDER_NORMAL AccessMask=0x110080 AccessList=%%1537
+				%%1541
+				%%4423
+				 AccessReason=%%1537:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:36.498005
+[06:37:37.462037] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:36.501867
+[06:37:37.462289] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:36.502095
+[06:37:38.523339] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=delete_folder_normal\inner.txt AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:37.512478
+[06:37:38.523809] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=delete_folder_complete\desktop.ini AccessMask=0x120089 AccessList=%%1538
+				%%1541
+				%%4416
+				%%4419
+				%%4423
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4419:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:37.918738
+[06:37:38.524388] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=delete_folder_complete AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:38.436502
+[06:37:38.524984] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x120089 AccessList=%%1538
+				%%1541
+				%%4416
+				%%4419
+				%%4423
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4419:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:38.440132
+[06:37:38.525399] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=DELETE_FOLDER_COMPLETE AccessMask=0x110080 AccessList=%%1537
+				%%1541
+				%%4423
+				 AccessReason=%%1537:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:38.448304
+[06:37:38.525743] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=delete_folder_complete\inner.txt AccessMask=0x10080 AccessList=%%1537
+				%%4423
+				 AccessReason=%%1537:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:38.451027
+[06:37:38.526047] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=DELETE_FOLDER_COMPLETE AccessMask=0x110080 AccessList=%%1537
+				%%1541
+				%%4423
+				 AccessReason=%%1537:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:38.454202
+[06:37:38.526340] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:38.462672
+[06:37:38.526567] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:38.462727
+[06:37:40.454611] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=delete_folder_complete\inner.txt AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:39.450977
+[06:37:40.454942] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SourceFolders AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:40.243514
+[06:37:40.455269] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SourceFolders AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:40.244840
+[06:37:40.455687] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SourceFolders AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:40.244971
+[06:37:40.455997] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SourceFolders AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:40.251997
+[06:37:40.456318] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SourceFolders\CopyFolderSource AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:40.255227
+[06:37:40.456716] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SourceFolders\MoveFolderSource AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:40.257216
+[06:37:40.457066] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SourceFolders\RenameFolderSource AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:40.259409
+[06:37:49.724177] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SOURCEFOLDERS\RENAMEFOLDERSOURCE AccessMask=0x110080 AccessList=%%1537
+				%%1541
+				%%4423
+				 AccessReason=%%1537:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:48.719782
+[06:37:49.724583] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SOURCEFOLDERS AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:48.720593
+[06:37:49.724896] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SOURCEFOLDERS AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:48.721740
+[06:37:49.725249] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SourceFolders AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:48.725875
+[06:37:49.725558] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SourceFolders AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:48.726114
+[06:37:49.725856] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:48.740987
+[06:37:49.726117] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:48.743106
+[06:37:49.726435] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SourceFolders AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:48.746555
+[06:37:51.482391] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:50.469582
+[06:37:51.482770] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:50.470016
+[06:37:51.483096] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SourceFolders\CopyFolderSource AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.104651
+[06:37:51.483471] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x120089 AccessList=%%1538
+				%%1541
+				%%4416
+				%%4419
+				%%4423
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4419:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.105902
+[06:37:51.483743] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SOURCEFOLDERS\COPYFOLDERSOURCE AccessMask=0x120089 AccessList=%%1538
+				%%1541
+				%%4416
+				%%4419
+				%%4423
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4419:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.131908
+[06:37:51.484060] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=CopyFolderSource AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.133183
+[06:37:51.484962] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=CopyFolderSource AccessMask=0x4 AccessList=%%4418
+				 AccessReason=%%4418:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.133192
+[06:37:51.485242] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=CopyFolderSource AccessMask=0x17019b AccessList=%%1537
+				%%1538
+				%%1539
+				%%1541
+				%%4416
+				%%4417
+				%%4419
+				%%4420
+				%%4423
+				%%4424
+				 AccessReason=%%1537:	%%1801	D:(A;;FA;;;WD)
+				%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%1539:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4417:	%%1801	D:(A;;FA;;;WD)
+				%%4419:	%%1801	D:(A;;FA;;;WD)
+				%%4420:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				%%4424:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.134960
+[06:37:51.485640] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SourceFolders\CopyFolderSource\inner.txt AccessMask=0x120089 AccessList=%%1538
+				%%1541
+				%%4416
+				%%4419
+				%%4423
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4419:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.138379
+[06:37:51.485965] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=CopyFolderSource\inner.txt AccessMask=0x17019f AccessList=%%1537
+				%%1538
+				%%1539
+				%%1541
+				%%4416
+				%%4417
+				%%4418
+				%%4419
+				%%4420
+				%%4423
+				%%4424
+				 AccessReason=%%1537:	%%1801	D:(A;;FA;;;WD)
+				%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%1539:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4417:	%%1801	D:(A;;FA;;;WD)
+				%%4418:	%%1801	D:(A;;FA;;;WD)
+				%%4419:	%%1801	D:(A;;FA;;;WD)
+				%%4420:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				%%4424:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.139792
+[06:37:51.486287] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=CopyFolderSource\inner.txt AccessMask=0x2 AccessList=%%4417
+				 AccessReason=%%4417:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.139800
+[06:37:51.486530] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=CopyFolderSource\inner.txt AccessMask=0x80 AccessList=%%4423
+				 AccessReason=%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.143080
+[06:37:51.486773] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=CopyFolderSource\inner.txt:Zone.Identifier AccessMask=0x80 AccessList=%%4423
+				 AccessReason=%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.144626
+[06:37:51.487048] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=CopyFolderSource\inner.txt AccessMask=0x80 AccessList=%%4423
+				 AccessReason=%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.145271
+[06:37:51.487305] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=CopyFolderSource\inner.txt AccessMask=0x80 AccessList=%%4423
+				 AccessReason=%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.146329
+[06:37:51.487593] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=CopyFolderSource\inner.txt:Zone.Identifier AccessMask=0x12019f AccessList=%%1538
+				%%1541
+				%%4416
+				%%4417
+				%%4418
+				%%4419
+				%%4420
+				%%4423
+				%%4424
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4417:	%%1801	D:(A;;FA;;;WD)
+				%%4418:	%%1801	D:(A;;FA;;;WD)
+				%%4419:	%%1801	D:(A;;FA;;;WD)
+				%%4420:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				%%4424:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.147500
+[06:37:51.487935] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=CopyFolderSource\inner.txt:Zone.Identifier AccessMask=0x2 AccessList=%%4417
+				 AccessReason=%%4417:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.147508
+[06:37:51.488246] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.157780
+[06:37:51.488583] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.159042
+[06:37:51.488840] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SourceFolders AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.162805
+[06:37:51.489186] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.165719
+[06:37:51.489475] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SourceFolders AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.167912
+[06:37:51.489694] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.213200
+[06:37:51.489912] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=CopyFolderSource AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.218020
+[06:37:51.490190] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.221304
+[06:37:51.490437] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=CopyFolderSource AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:51.224188
+[06:37:53.136974] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=CopyFolderSource\inner.txt AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:52.126722
+[06:37:53.137356] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=CopyFolderSource\inner.txt:Zone.Identifier AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:52.142078
+[06:37:53.137638] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=CopyFolderSource\inner.txt:Zone.Identifier AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:52.143559
+[06:37:53.138042] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SourceFolders AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:52.551787
+[06:37:53.138363] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SourceFolders AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:52.551908
+[06:37:55.654170] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SourceFolders\MoveFolderSource AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:54.644204
+[06:37:55.654596] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:55.356941
+[06:37:55.654903] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:55.357151
+[06:37:56.704710] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x120089 AccessList=%%1538
+				%%1541
+				%%4416
+				%%4419
+				%%4423
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4419:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:56.087219
+[06:37:56.705095] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SOURCEFOLDERS\MOVEFOLDERSOURCE AccessMask=0x20080 AccessList=%%1538
+				%%4423
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:56.106806
+[06:37:56.705381] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SOURCEFOLDERS\MOVEFOLDERSOURCE AccessMask=0x110080 AccessList=%%1537
+				%%1541
+				%%4423
+				 AccessReason=%%1537:	%%1801	D:(A;;FA;;;WD)
+				%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:56.108384
+[06:37:56.705678] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:56.109299
+[06:37:56.705927] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:56.110223
+[06:37:56.706136] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x80 AccessList=%%4423
+				 AccessReason=%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:56.112447
+[06:37:56.706410] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SOURCEFOLDERS AccessMask=0x20080 AccessList=%%1538
+				%%4423
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:56.113757
+[06:37:56.706634] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x20080 AccessList=%%1538
+				%%4423
+				 AccessReason=%%1538:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:56.115278
+[06:37:56.706874] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:56.116827
+[06:37:56.707126] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:56.120682
+[06:37:56.707415] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59053 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:56.120927
+[06:37:56.707694] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:56.141365
+[06:37:56.708018] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=MoveFolderSource AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:56.148444
+[06:37:56.708204] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:56.149908
+[06:37:56.708462] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:56.150453
+[06:37:56.708672] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59054 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=\ AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:56.153550
+[06:37:56.708910] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=55411 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=MoveFolderSource AccessMask=0x100080 AccessList=%%1541
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:56.160803
+[06:37:58.603309] ShareFileAccess(Event5145) SubjectUserSid=S-1-5-21-3393082697-3192495989-2329455330-1012 SubjectUserName=smbtest SubjectDomainName=WIN-DESK-2022 SubjectLogonId=0x643867fb ObjectType=File IpAddress=192.168.1.20 IpPort=59055 ShareName=\\*\ProbeTest ShareLocalPath=\??\D:\tmp\ProbeTest RelativeTargetName=SourceFolders\RenameFolderSource_hoge AccessMask=0x100081 AccessList=%%1541
+				%%4416
+				%%4423
+				 AccessReason=%%1541:	%%1801	D:(A;;FA;;;WD)
+				%%4416:	%%1801	D:(A;;FA;;;WD)
+				%%4423:	%%1801	D:(A;;FA;;;WD)
+				 EtwTime=06:37:57.915329
+[06:38:31.163202] === SmbServerAuditProbe 終了 (出力イベント数=180) ===
